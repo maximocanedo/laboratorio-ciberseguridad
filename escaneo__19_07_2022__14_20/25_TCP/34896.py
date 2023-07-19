@@ -12,7 +12,7 @@ from socket import *
 import sys
 
 def usage():
-    print "shellshock_smtp.py <target> <command>"
+    print("shellshock_smtp.py <target> <command>")
 
 argc = len(sys.argv)
 if(argc < 3 or argc > 3):
