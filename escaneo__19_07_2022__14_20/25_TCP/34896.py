@@ -49,8 +49,7 @@ def netFormat(d):
     d += "\n"
     encoded_bytes = d.encode('utf-8')
     hex_representation = encoded_bytes.hex()
-    decoded_bytes = bytes.fromhex(hex_representation)
-    return decoded_bytes.decode('utf-8')
+    return hex_representation
 
 data = netFormat("mail from:<>")
 s.send(data)
