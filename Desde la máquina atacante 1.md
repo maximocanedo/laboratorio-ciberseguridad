@@ -33,39 +33,5 @@ Pasos a seguir
 				`searchsploit -m <path-de-la-tabla>` para copiar un mirror.
 			Leer, comprender qué hace el exploit:
 				`cat <exploit-file>` para ver el contenido del archivo.
-				`batcat (?)` un cat más user-friendly. 
-
-Pruebas 19/07/2023 12:00
-	Direcciones IP
-		`Metasploitable: 192.168.56.101`
-		`Máquina atacante: 192.168.56.103`
-	Visibilidad
-		`Metasploitable es vista: SÍ`
-		`Máquina atacante es vista: SÍ`
-	Escaneo de puertos y servicios
-		Resultado del escaneo
-			Se encuentra en el archivo `~/Proyects/Escaneo/scan.md`
-		Exploits encontrados
-			`OpenSSH < 6.6 SFTP (x64) - Command Execution`
-				`Path: linux_x86-64/remote/45000.c`
-				`Puerto 22/TCP open`
-				`Servicio: SSH`
-				Explotación de vulnerabilidad.
-					Intento 1.  #failed
-						Se intentó compilar el archivo `45000.c` y ejecutarlo con el comando:
-						`./exploit <Dirección IP Metasploitable> msfadmin 'ls -la'`
-						Pero da error de conexión a host. Se intentará luego.
-			`Apache - Arbitrary Long HTTP Headers Denial of Service`
-				`Path: linux/dos/371.c`
-				`Puerto: 80/TCP open`
-				`Servicio: http`
-				Explotación de vulnerabilidad.
-					Intento 1. #failed
-						Se intentó compilar el exploit y ejecutarlo con la IP de metasploitable, pero recibimos el error: `zsh: segmentation fault ./exploit 192.168.56.101`
-			`Postfix SMTP 4.2.x < 4.2.48 - 'Shellshock' Remote Command Injection`
-				`Path: linux/remote/34896.py`
-				`Puerto: 25/TCP`
-				`Servicio: SMTP`
-				Explotación de vulnerabilidad.
-					Intento 1. #in-progress
-						
+				`batcat (?)` un cat más user-friendly.
+			
