@@ -1,0 +1,102 @@
+Script started on 2023-07-25 09:48:22-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="41"]
+                                                                                                                                                                      ]0;kali@kali: ~/laboratorio-ciberseguridad/3306_TCP[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/laboratorio-ciberseguridad/3306_TCP[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mn[24m[4mn[24m[38;2;153;153;153mmap -sV 192.168.56.101 -p 80[39m[28D[24m[36mn[36mm[39m[39m[4mn[39m[4mm[39m[4ma[24m[24m[36mn[24m[36mm[24m[36ma[36mp[39m[39m [32m-[39m[32m-[32ms[39m[32ms[32mV[39m[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m5[39m6[39m.[39m1[39m0[39m1[39m [32m-[32mp[39m[39m [39m8[39m0 [38;2;153;153;153m0[39m [39m [38;2;153;153;153m80[39m[39m3[39m 0 306[?1l>[?2004l
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-07-25 09:48 EDT
+Nmap scan report for 192.168.56.101
+Host is up (0.0013s latency).
+
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 5.0.51a-3ubuntu5
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.32 seconds
+                                                                                                                                                                      ]0;kali@kali: ~/laboratorio-ciberseguridad/3306_TCP
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/laboratorio-ciberseguridad/3306_TCP[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mm[24m[4mm[24m[38;2;153;153;153msfconsole[39m[9D[4mm[39m[4ms[24m[4mm[4ms[39m[4mf[24m[24m[36mm[24m[36ms[24m[36mf[36mc[36mo[36mn[36ms[36mo[36ml[36me[39m[?1l>[?2004l
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-                                                  
+[0m[36m[0m
+ ______________________________________________________________________________
+|                                                                              |
+|                   [1m[32mMETASPLOIT CYBER MISSILE COMMAND V5[0m                        |
+|______________________________________________________________________________|
+      [33m\[0m                                  [33m/[0m                      [33m/[0m
+       [33m\[0m     .                          [33m/[0m                      [33m/[0m            x
+        [33m\[0m                              [33m/[0m                      [33m/[0m
+         [33m\[0m                            [33m/[0m          +           [33m/[0m
+          [33m\[0m            +             [33m/[0m                      [33m/[0m
+           *                        [33m/[0m                      [33m/[0m
+                                   [33m/[0m      .               [33m/[0m
+    X                             [33m/[0m                      [33m/[0m            X
+                                 [33m/[0m                     [31m###[0m
+                                [33m/[0m                     [31m# [1m%[0m[31m #[0m
+                               [33m/[0m                       [31m###[0m
+                      .       [33m/[0m
+     .                       [33m/[0m      .            [31m*[0m           .
+                            [33m/[0m
+                           *
+                  +                       [31m*[0m
+
+                                       [1m^[0m
+####      __     __     __          #######         __     __     __        ####
+####    [33m/[0m    [33m\[0m [33m/[0m    [33m\[0m [33m/[0m    [33m\[0m      ###########     [33m/[0m    [33m\[0m [33m/[0m    [33m\[0m [33m/[0m    [33m\[0m      ####
+################################################################################
+################################################################################
+# [1mWAVE 5[0m ######## [1mSCORE 31337[0m ################################## [1mHIGH FFFFFFFF[0m #
+################################################################################
+                                                           https://metasploit.com[0m
+[0m
+
+       =[ [33mmetasploit v6.3.25-dev[0m                          ]
++ -- --=[ 2332 exploits - 1219 auxiliary - 413 post       ]
++ -- --=[ 1385 payloads - 46 encoders - 11 nops           ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: Search can apply complex filters such as 
+[32msearch cve:2009 type:exploit[0m, see all the filters 
+with [32mhelp search[0m
+Metasploit Documentation: https://docs.metasploit.com/
+
+[?1034h[4mmsf6[0m [0m> search scanner mysql
+[0m
+Matching Modules
+================
+
+   #  Name                                               Disclosure Date  Rank    Check  Description
+   -  ----                                               ---------------  ----    -----  -----------
+   0  auxiliary/[45mscanner[0m/[45mmysql[0m/[45mmysql[0m_writable_dirs                         normal  No     [45mMYSQL[0m Directory Write Test
+   1  auxiliary/[45mscanner[0m/[45mmysql[0m/[45mmysql[0m_file_enum                             normal  No     [45mMYSQL[0m File/Directory Enumerator
+   2  auxiliary/[45mscanner[0m/[45mmysql[0m/[45mmysql[0m_hashdump                              normal  No     [45mMYSQL[0m Password Hashdump
+   3  auxiliary/[45mscanner[0m/[45mmysql[0m/[45mmysql[0m_schemadump                            normal  No     [45mMYSQL[0m Schema Dump
+   4  auxiliary/[45mscanner[0m/[45mmysql[0m/[45mmysql[0m_authbypass_hashdump  2012-06-09       normal  No     [45mMySQL[0m Authentication Bypass Password Dump
+   5  auxiliary/[45mscanner[0m/[45mmysql[0m/[45mmysql[0m_login                                 normal  No     [45mMySQL[0m Login Utility
+   6  auxiliary/[45mscanner[0m/[45mmysql[0m/[45mmysql[0m_version                               normal  No     [45mMySQL[0m Server Version Enumeration
+
+
+Interact with a module by name or index. For example [32minfo 6[0m, [32muse 6[0m or [32muse auxiliary/scanner/mysql/mysql_version[0m
+
+[4mmsf6[0m [0m> use 6
+[0m[4mmsf6[0m auxiliary([1m[31mscanner/mysql/mysql_version[0m) [0m> show options
+[0m
+Module options (auxiliary/scanner/mysql/mysql_version):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   RHOSTS                    yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT    3306             yes       The target port (TCP)
+   THREADS  1                yes       The number of concurrent threads (max one per host)
+
+
+View the full module info with the [32minfo[0m, or [32minfo -d[0m command.
+
+[4mmsf6[0m auxiliary([1m[31mscanner/mysql/mysql_version[0m) [0m> set RHOSTS 192.168.10[K[K56.101
+[0mRHOSTS => 192.168.56.101
+[4mmsf6[0m auxiliary([1m[31mscanner/mysql/mysql_version[0m) [0m> run
+[0m
+[1m[32m[+][0m 192.168.56.101:3306   - 192.168.56.101:3306 is running MySQL 5.0.51a-3ubuntu5 (protocol 10)
+[1m[34m[*][0m 192.168.56.101:3306   - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/mysql/mysql_version[0m) [0m> [0m                                                                                                                                                                      ]0;kali@kali: ~/laboratorio-ciberseguridad/3306_TCP
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/laboratorio-ciberseguridad/3306_TCP[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[?2004l
+
+Script done on 2023-07-25 09:54:37-04:00 [COMMAND_EXIT_CODE="0"]
